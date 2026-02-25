@@ -1,17 +1,11 @@
 ---
-title: "Research Topics"
+title: Research Topics
 date: 2025-01-01
-tags: ["Research", "Research Topics"]
-author: "Federico Ruggeri"
-description: "Academic research topics." 
-summary: "Academic research topics.." 
-cover:
-    image: "topics.jpg"
-    alt: "Research Topics"
-    relative: true
-showToc: true
-disableAnchoredHeadings: false
+tags:
+  - research
+  - research topics
 
+summary: "Academic research topics.."
 ---
 
 ## Useful Links

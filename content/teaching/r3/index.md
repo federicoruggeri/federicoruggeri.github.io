@@ -1,20 +1,15 @@
 ---
 title: "Robust and Reproducible Research"
 date: 2025-04-30
-tags: ["Reproducibility","Academic research","Data creation","Experimental setting","Evaluation"]
-author: "Federico Ruggeri"
-description: "This PhD course introduces and discusses the concept of 'reproducibility' in research." 
-summary: "This PhD course introduces and discusses the concept of 'reproducibility' in research. It focuses on data curation, experimental setup, model comparison, and programming best practices." 
-cover:
-    image: "r3.jpg"
-    alt: "Robust and Reproducible Research"
-    relative: true
-editPost:
-    URL: "https://github.com/federicoruggeri/phdlectures-r3"
-    Text: "Course portal"
-showToc: true
-disableAnchoredHeadings: false
-
+tags:
+  - reproducibility
+  - research
+  - data creation
+  - benchmark
+  - experimental setting
+  - evaluation
+  
+summary: "This PhD course introduces and discusses the concept of 'reproducibility' in research."
 ---
 
 ## Course Repository

@@ -1,0 +1,203 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Federico Ruggeri
+  given: Federico
+  family: Ruggeri
+  alternate: ''  # Example: 王伟
+  pronunciation: ''  # Example: Wáng Wěi
+  pronouns: he/him
+postnominals:
+  - PhD
+status:
+  icon: "☕️"
+role: Postdoctoral Research Fellow
+bio: |
+  I hold the position of Post-doc Research Fellow at the Computer Science and Engineering
+  Department (DISI) of the University of Bologna and I’m mainly researching knowledge extraction and Neuro-symbolic solutions for UKI.
+  
+  My main research area is integrating unstructured knowledge into deep learning models. I’m
+  currently focusing on Natural Language Processing (NLP) and Argument Mining, a branch
+  of NLP that aims at extracting arguments from unstructured texts.
+affiliations:
+  - name: Language Technologies Lab, University of Bologna
+    url: https://nlp.unibo.it/
+
+links:
+  - icon: at-symbol
+    url: mailto:federico.ruggeri6@unibo.it
+    label: E-mail
+  - icon: brands/github
+    url: https://github.com/federicoruggeri
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/federico-ruggeri-a87647145/
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=moOd0BwAAAAJ
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0002-1697-8586
+
+interests:
+  - Large Language Models
+  - NLP
+  - Interpretability
+  - Knowledge Integration
+  - Knowledge Extraction
+
+education:
+  - degree: PhD Computer Science
+    institution: University of Bologna
+    start: 2021
+    end: 2018
+    summary: |
+      Thesis on integrating knowledge into deep learning models in the field of NLP.
+    button:
+      text: Download dissertation
+      url: /cv.pdf
+      icon: hero/arrow-down-tray
+  - degree: MS Computer Science
+    institution: University of Bologna
+    start: 2015
+    end: 2018
+  - degree: BS Computer Science
+    institution: University of Bologna
+    start: 2012
+    end: 2015
+
+experience:
+  - role: Postdoctoral Research Fellow
+    org: University of Bologna
+    start: 2025
+    summary: |
+      Develop a transparent AI system that (i) processes legal documents (e.g., tax audit acts) to 
+      extract judicial principles of law; (ii) integrates domain-specific contextual knowledge, 
+      such as EU legal principles traceable back to the processed documents; (iii) produce 
+      a human-comprehensible explanation on the extraction process that is grounded on
+      the integrated knowledge.
+    button:
+      text: View POLINE project
+      url: https://site.unibo.it/poline/en
+      icon: hero/arrow-down-tray
+  - role: Postdoctoral Research Fellow
+    org: University of Bologna
+    start: 2024
+    end: 2025
+    summary: |
+      Developing LLM-based solutions for industrial use cases that speed up existing user assistance systems while guaranteeing privacy.
+    button:
+      text: View BI-REX GeMEB and SmartCasm projects
+      url: https://bi-rex.it/quarto-bando-bi-rex/
+      icon: hero/arrow-down-tray
+  - role: Visiting Researcher
+    org: Alan Turing Institute
+    start: 2024
+    end: 2025
+    summary: |
+      Worked on two research papers on rumour verification and LLMs reasoning.
+  - role: Postdoctoral Research Fellow
+    org: University of Bologna
+    start: 2022
+    end: 2024
+    summary: |
+      Developed horizontal matchmaking solutions for ranking textual sources. 
+      These solutions should be compliant with AI-on-demand online services. 
+      Critical requirements concern textual sources maintenance.
+    button:
+      text: View AI4EU project
+      url: https://www.ai4europe.eu/
+      icon: hero/arrow-down-tray
+  - role: Postdoctoral Research Fellow
+    org: University of Bologna
+    start: 2021
+    end: 2022
+    summary: |
+      Developed NLP solutions for large-scale heterogeneous document matching. 
+      In particular, I’ve researched strategies for combining unstructured knowledge 
+      (e.g., textual documents, researcher profiles, user requests) and ontology knowledge graphs.
+    button:
+      text: View StairwAI ICT-49 project
+      url: https://stairwai.nws.cs.unibo.it/
+      icon: hero/arrow-down-tray
+  - role: External Research Collaborator
+    org: University of Modena and Reggio Emilia
+    start: 2021
+    end: 2021
+    summary: |
+      Developed a ranking system for scientific literature based on Argument Mining features.
+    button:
+      text: View FISR-COVID 2020 AMICA project
+      url: http://amica.unimore.it/
+      icon: hero/arrow-down-tray
+  - role: Research Intern
+    org: Ubiquitous Knowledge Processing (UKP) Lab
+    start: 2021
+    end: 2021
+    summary: |
+      Developed of AI dialogue argumentative chatbots on scientific literature.
+      We investigated the impact of arguments in scientific papers to boost the capabilities of a dialogue agent.
+    button:
+      text: View FISR-COVID 2020 AMICA project
+      url: http://amica.unimore.it/
+      icon: hero/arrow-down-tray
+  - role: Research Scholarship
+    org: Magneti Marelli
+    start: 2018
+    end: 2018
+    summary: |
+      Developed anomaly detection solutions based on forecasting neural networks and encoder-decoder architectures.
+
+skills:
+  - name: Technical Skills
+    items:
+      - label: Python
+        level: 4
+      - label: Web development
+        level: 3
+      - label: Database
+        level: 2
+      - label: Git
+        level: 4
+  - name: Research & Communication
+    items:
+      - label: Academic Writing
+        level: 3
+      - label: Conference Presentations
+        level: 3
+      - label: Mentoring
+        level: 4
+      - label: Communication
+        level: 4
+      - label: Organization
+        level: 4
+  - name: Research Topics
+    items:
+      - label: LLM Prompting
+        level: 4
+      - label: Interpretability
+        level: 4
+      - label: Reinforcement Learning
+        level: 3
+      - label: Argument Mining
+        level: 4
+      - label: Speech Processing
+        level: 3
+
+languages:
+  - name: English
+    level: 4
+    label: Fluent (C1, IELTS)
+  - name: Italian
+    level: 5
+    label: Native
+
+awards:
+  - title: Outstanding Reviewer
+    awarder: EMNLP
+    date: "2024"
+    summary: selected as one of the top reviewers based on several factors, such as review quality, availability, and active interactions with peers.
+    icon: hero/trophy
+  - title: Visiting Researcher Recipient
+    awarder: Future Artificial Intelligence Research (FAIR) Foundation
+    date: "2024"
+    summary: Awarded 2.5k euros for a two-week visiting period. The objective is to strengthen the scientific research of both Italian and UK researchers, promote the internationalization and the cooperation between Italy and UK and foster the technology transfers for the national industrial and societal challenges in both countries.
+    icon: hero/academic-cap

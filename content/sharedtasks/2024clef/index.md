@@ -1,25 +1,17 @@
 ---
 title: "Overview of the CLEF-2024 CheckThat! Lab: Check-Worthiness, Subjectivity, Persuasion, Roles, Authorities, and Adversarial Robustness" 
 date: 2024-09-01
-tags: ["natural language processing", "shared task", "clef", "subjectivity detection"]
-author: ["Alberto Barrón-Cedeño", "Firoj Alam", "Julia Maria Struß", "Preslav Nakov", "Tanmoy Chakraborty", "Tamer Elsayed", "Piotr Przybyła", "Tommaso Caselli", "Giovanni Da San Martino", "Fatima Haouari", "Maram Hasanain", "Chengkai Li", "Jakub Piskorski", "Federico Ruggeri", "Xingyi Song", "Reem Suwaileh"]
-description: "We describe the seventh edition of the CheckThat! lab, part of the 2024 Conference and Labs of the Evaluation Forum (CLEF). " 
-summary: "We describe the seventh edition of the CheckThat! lab, part of the 2024 Conference and Labs of the Evaluation Forum (CLEF). " 
-cover:
-    image: "paper.png"
-    alt: "Overview of the CLEF-2024 CheckThat! Lab: Check-Worthiness, Subjectivity, Persuasion, Roles, Authorities, and Adversarial Robustness"
-    relative: true
-editPost:
-    URL: "https://github.com/federicoruggeri/hugo-website"
-    Text: "CLEF"
-
----
-
+tags: 
+  - shared task
+  - CLEF
+  - subjectivity detection
+  
+summary: "We describe the seventh edition of the CheckThat! lab, part of the 2024 Conference and Labs of the Evaluation Forum (CLEF). "
 ---
 
 ##### Resources
 
-+ [CheckThat! 2025](https://checkthat.gitlab.io/clef2024/)
++ [CheckThat! 2024](https://checkthat.gitlab.io/clef2024/)
 + [Paper](paper.pdf)
 
 ---

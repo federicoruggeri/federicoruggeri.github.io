@@ -1,4 +1,26 @@
 ---
-title: "Shared Tasks"
-description: "Shared tasks where Federico Ruggeri participated in as member of the organization."
+title: 'Shared Tasks'
+date: 2026-02-25
+type: landing
+
+design:
+  # Section spacing
+  spacing: '5rem'
+
+# Page sections
+sections:
+  - block: collection
+    content:
+      title: Shared Tasks
+      text: ''
+      filters:
+        folders:
+          - sharedtasks
+    design:
+      view: article-grid
+      fill_image: false
+      columns: 2
+      show_date: true
+      show_read_time: true
+      show_read_more: false
 ---

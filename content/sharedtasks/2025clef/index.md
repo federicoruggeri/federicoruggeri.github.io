@@ -1,20 +1,12 @@
 ---
 title: "Overview of the CLEF-2025 CheckThat! Lab: Subjectivity, fact-checking, claim normalization, and retrieval" 
 date: 2025-09-01
-tags: ["natural language processing", "shared task", "clef", "subjectivity detection"]
-author: [Alberto Barrón-Cedeño, Firoj Alam, Julia Maria Struß, Preslav Nakov, Tanmoy Chakraborty, Tamer Elsayed, Piotr Przybyła, Tommaso Caselli, Giovanni Da San Martino, Fatima Haouari, Maram Hasanain, Chengkai Li, Jakub Piskorski, Federico Ruggeri, Xingyi Song, Reem Suwaileh]
-description: "This paper presents the eighth edition of the CheckThat! lab, part of the 2025 Conference and Labs of the Evaluation Forum (CLEF)." 
-summary: "This paper presents the eighth edition of the CheckThat! lab, part of the 2025 Conference and Labs of the Evaluation Forum (CLEF)." 
-cover:
-    image: "paper.png"
-    alt: "Overview of the CLEF-2025 CheckThat! Lab: Subjectivity, fact-checking, claim normalization, and retrieval"
-    relative: true
-editPost:
-    URL: "https://github.com/federicoruggeri/hugo-website"
-    Text: "CLEF"
+tags: 
+  - shared task
+  - CLEF
+  - subjectivity detection
 
----
-
+summary: "This paper presents the eighth edition of the CheckThat! lab, part of the 2025 Conference and Labs of the Evaluation Forum (CLEF)."
 ---
 
 ##### Resources
