@@ -10,4 +10,7 @@ tags:
   - event
  
 summary: "I was invited to give a talk about the academic reproducibility crysis."
+
+type: redirect
+target: https://nlp.unibo.it/news/equal/
 ---
