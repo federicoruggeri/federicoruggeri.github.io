@@ -1,5 +1,5 @@
 ---
-title: 'AMICA: An Argumentative Search Engine for COVID-19 Literature'
+title: "AMICA: An Argumentative Search Engine for COVID-19 Literature"
 
 # Authors
 # If you created a profile for a user (e.g. the default `me` user), write the username (folder name) here
