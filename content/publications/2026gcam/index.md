@@ -38,11 +38,6 @@ hugoblox:
   ids:
     arxiv: 2406.14099v2
 
-links:
-- type: preprint
-  provider: arxiv
-  id: 2406.14099v2
-
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
