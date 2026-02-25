@@ -64,3 +64,23 @@
   from = "/tools/cinnamon"
   to = "https://nlp.unibo.it/cinnamon/overview.html"
   force = true
+
+[[redirects]]
+  from = "/news/2026argmining"
+  to = "https://nlp.unibo.it/news/argmining2026/"
+  force = true
+
+[[redirects]]
+  from = "/news/alma-ai"
+  to = "https://nlp.unibo.it/news/alma-ai/"
+  force = true
+
+[[redirects]]
+  from = "/news/equal"
+  to = "https://nlp.unibo.it/news/equal/"
+  force = true
+
+[[redirects]]
+  from = "/news/prima"
+  to = "https://nlp.unibo.it/news/prima/"
+  force = true
