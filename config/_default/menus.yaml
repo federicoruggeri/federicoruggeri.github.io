@@ -31,3 +31,6 @@ main:
   - name: Modding
     url: modding/
     weight: 40
+  - name: Tags
+    url: tags/
+    weight: 45

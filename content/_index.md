@@ -66,7 +66,7 @@ sections:
         featured_only: true
     design:
       view: article-grid
-      columns: 2
+      columns: '2'
   - block: collection
     content:
       title: Recent Publications
@@ -94,7 +94,7 @@ sections:
     design:
       columns: 2
       # Choose a layout view
-      view: article-grid
+      view: date-title-summary
       # Reduce spacing
       spacing:
         padding: [0, 0, 0, 0]
