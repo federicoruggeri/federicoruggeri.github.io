@@ -59,24 +59,14 @@ sections:
   - block: collection
     id: papers
     content:
-      title: Featured Publications
+      title: Selected Publications
       filters:
         folders:
-          - publications
-        featured_only: true
-    design:
-      view: article-grid
-      columns: '2'
-  - block: collection
-    content:
-      title: Recent Publications
-      text: ''
-      filters:
-        folders:
-          - publications
-        exclude_featured: false
+          - publications_selected
+        featured_only: false
     design:
       view: citation
+      columns: '2'
   - block: collection
     content:
       title: Recent News

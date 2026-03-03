@@ -6,11 +6,10 @@ tags:
   - research topics
 
 summary: "Academic research topics.."
+
+type: redirect
+target: https://nlp.unibo.it/students/
 ---
-
-## Useful Links
-
-+ [Research Topics](https://site.unibo.it/nlp/en/teaching/project-topics)
 
 ## Argumentation Mining
 

@@ -12,6 +12,8 @@ tags:
 
 summary: "We present an overview of the MM-ArgFallacy2025 shared task on Multimodal Argumentative Fallacy Detection and Classification in Political Debates, co-located with the 12th Workshop on Argument Mining at ACL 2025." 
 
+type: redirect
+target: https://nlp.unibo.it/events/2025argfallacy/
 ---
 
 ##### Resources

@@ -7,6 +7,9 @@ tags:
   - subjectivity detection
 
 summary: "This paper presents the eighth edition of the CheckThat! lab, part of the 2025 Conference and Labs of the Evaluation Forum (CLEF)."
+
+type: redirect
+target: https://nlp.unibo.it/events/2025clef/
 ---
 
 ##### Resources
