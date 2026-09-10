@@ -49,7 +49,7 @@ doi: 10.1007/978-3-031-42448-9_20
 abstract: ''
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Overview of the CLEF 2023 CheckThat! Lab and its multilingual information-verification tasks."
 
 tags: [workshop]
 
@@ -85,6 +85,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: Publisher
   url: https://doi.org/10.1007/978-3-031-42448-9_20
 ---

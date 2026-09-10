@@ -8,8 +8,6 @@ tags:
   
 summary: "We describe the seventh edition of the CheckThat! lab, part of the 2024 Conference and Labs of the Evaluation Forum (CLEF). "
 
-type: redirect
-target: https://nlp.unibo.it/events/2024clef/
 ---
 
 ##### Resources

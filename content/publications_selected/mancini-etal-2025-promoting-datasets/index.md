@@ -37,7 +37,7 @@ doi: 10.1613/JAIR.1.16406
 abstract: ''
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Proposes responsible-development practices for speech datasets used in mental-health and neurological-disorder research."
 
 tags: [selected]
 
@@ -73,6 +73,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: Publisher
   url: https://doi.org/10.1613/jair.1.16406
 ---

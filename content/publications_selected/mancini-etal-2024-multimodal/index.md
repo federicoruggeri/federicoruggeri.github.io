@@ -41,7 +41,7 @@ abstract: Recent advances in NLP suggest that some tasks, such as argument detec
   arguments.
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Investigates multimodal fallacy classification in political debates."
 
 tags: [selected]
 
@@ -77,6 +77,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: ACL Anthology
   url: https://aclanthology.org/2024.eacl-short.16
 ---

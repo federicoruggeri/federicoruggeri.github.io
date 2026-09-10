@@ -45,7 +45,7 @@ doi: ''
 abstract: ''
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Overview of the CLEF 2024 CheckThat! Lab task on subjectivity in news articles."
 
 tags: [workshop]
 

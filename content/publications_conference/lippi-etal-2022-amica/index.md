@@ -41,7 +41,7 @@ doi: 10.24963/ijcai.2022/857
 abstract: ''
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "AMICA is an argumentative search engine for navigating COVID-19 scientific literature."
 
 tags: [conference]
 
@@ -77,6 +77,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: Publisher
   url: https://doi.org/10.24963/ijcai.2022/857
 ---

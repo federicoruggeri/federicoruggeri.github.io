@@ -51,7 +51,7 @@ abstract: With recent advances in question-answering models, various datasets ha
   ArgSciChat.
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Introduces a dataset of argumentative dialogues grounded in scientific papers."
 
 tags: [selected]
 
@@ -87,6 +87,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: ACL Anthology
   url: https://aclanthology.org/2023.acl-long.425
 ---

@@ -10,11 +10,7 @@ tags:
   - python
   - programming
   - research
-
-summary: Cinnamon is a simple framework for general-purpose configuration and code logic de-coupling.
-
+summary: "Cinnamon is a Python framework for separating configuration from application logic. Open its documentation."
 type: redirect
 target: https://nlp.unibo.it/cinnamon/overview.html
 ---
-
-Cinnamon is a simple framework for general-purpose configuration and code logic de-coupling.

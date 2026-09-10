@@ -38,7 +38,7 @@ doi: 10.1007/978-3-031-42448-9_1
 abstract: ''
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Evaluates Inception-based models for fashion image captioning across multiple datasets."
 
 tags: [workshop]
 
@@ -74,6 +74,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: Publisher
   url: https://doi.org/10.1007/978-3-031-42448-9_1
 ---

@@ -47,7 +47,7 @@ abstract: We propose misogyny detection as an Argumentative Reasoning task and w
   reasoning.
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Frames implicit misogyny detection as argumentative reasoning in Italian and English."
 
 tags: [selected]
 
@@ -83,6 +83,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: ACL Anthology
   url: https://aclanthology.org/2024.emnlp-main.1174
 ---

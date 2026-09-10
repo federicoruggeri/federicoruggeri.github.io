@@ -38,7 +38,7 @@ doi: 10.1007/978-3-030-85251-1_4
 abstract: ''
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Introduces SubjectivITA, an Italian newspaper corpus for subjectivity detection."
 
 tags: [workshop]
 
@@ -74,6 +74,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: Publisher
   url: https://doi.org/10.1007/978-3-030-85251-1_4
 ---

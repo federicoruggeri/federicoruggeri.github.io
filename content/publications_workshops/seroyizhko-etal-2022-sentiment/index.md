@@ -53,7 +53,7 @@ abstract: Cryptocurrencies have gained enormous momentum in finance and are nowa
   techniques. We make our dataset publicly available for research.
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Introduces a Reddit dataset annotated for sentiment and emotion to support Bitcoin price forecasting."
 
 tags: [workshop]
 
@@ -89,6 +89,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: ACL Anthology
   url: https://aclanthology.org/2022.finnlp-1.27
 ---

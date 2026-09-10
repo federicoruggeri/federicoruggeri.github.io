@@ -37,7 +37,7 @@ doi: 10.1007/978-3-031-08011-1_24
 abstract: ''
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Combines offline and online reinforcement learning for energy-management optimization."
 
 tags: [conference]
 
@@ -73,6 +73,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: Publisher
   url: https://doi.org/10.1007/978-3-031-08011-1_24
 ---

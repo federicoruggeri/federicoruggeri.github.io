@@ -40,7 +40,7 @@ doi: 10.3233/FAIA220465
 abstract: ''
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "A study of outcome prediction for Italian value-added tax decisions."
 
 tags: [conference]
 
@@ -76,6 +76,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: Publisher
   url: https://doi.org/10.3233/FAIA220465
 ---

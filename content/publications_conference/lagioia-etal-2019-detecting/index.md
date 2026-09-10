@@ -38,7 +38,7 @@ doi: 10.3233/FAIA190305
 abstract: ''
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Deep-learning methods for detecting unfair clauses in consumer contracts and explaining model decisions."
 
 tags: [conference]
 
@@ -74,6 +74,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: Publisher
   url: https://doi.org/10.3233/FAIA190305
 ---

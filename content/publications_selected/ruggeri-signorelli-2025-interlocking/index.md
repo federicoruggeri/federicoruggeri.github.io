@@ -43,7 +43,7 @@ abstract: A popular end-to-end architecture for selective rationalization is the
   outperforms several state-of-the-art competitors.
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Uses genetic-based learning to avoid interlocking in selective-rationalization pipelines."
 
 tags: [selected]
 
@@ -79,6 +79,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: ACL Anthology
   url: https://aclanthology.org/2025.acl-long.59/
 ---

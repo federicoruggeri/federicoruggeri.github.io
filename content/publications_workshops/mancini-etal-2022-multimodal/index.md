@@ -32,10 +32,10 @@ publication_short: ''
 
 doi: ''
 
-abstract: ''
+abstract: "We study multimodal argument mining in political debates by collating and extending existing corpora and conducting an initial evaluation of multimodal architectures, with emphasis on input-encoding methods. The results indicate directions for future work in this domain."
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Studies multimodal argument mining in political debates."
 
 tags: [workshop]
 
@@ -71,6 +71,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: ACL Anthology
   url: https://aclanthology.org/2022.argmining-1.15
 ---

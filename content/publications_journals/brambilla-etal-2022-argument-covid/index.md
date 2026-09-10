@@ -38,29 +38,10 @@ publication_short: ''
 
 doi: 10.3389/fpubh.2022.945181
 
-abstract: "<sec>BackgroundThe COVID-19 pandemic prompted the scientific community
-  to share timely evidence, also in the form of pre-printed papers, not peer reviewed
-  yet.</sec><sec>PurposeTo develop an artificial intelligence system for the analysis
-  of the scientific literature by leveraging on recent developments in the field of
-  Argument Mining.</sec><sec>MethodologyScientific quality criteria were borrowed
-  from two selected Cochrane systematic reviews. Four independent reviewers gave a
-  blind evaluation on a 1–5 scale to 40 papers for each review. These scores were
-  matched with the automatic analysis performed by an AM system named MARGOT, which
-  detected claims and supporting evidence for the cited papers. Outcomes were evaluated
-  with inter-rater indices (Cohen's Kappa, Krippendorff's Alpha, s<sup>*</sup> statistics).</sec><sec>ResultsMARGOT
-  performs differently on the two selected Cochrane reviews: the inter-rater indices
-  show a fair-to-moderate agreement of the most relevant MARGOT metrics both with
-  Cochrane and the skilled interval scores, with larger values for one of the two
-  reviews.</sec><sec>Discussion and conclusionsThe noted discrepancy could rely on
-  a limitation of the MARGOT system that can be improved; yet, the level of agreement
-  between human reviewers also suggests a different complexity between the two reviews
-  in debating controversial arguments. These preliminary results encourage to expand
-  and deepen the investigation to other topics and a larger number of highly specialized
-  reviewers, to reduce uncertainty in the evaluation process, thus supporting the
-  retraining of AM systems.</sec>"
+abstract: "Background: The COVID-19 pandemic prompted the scientific community to share timely evidence, including preprints that had not yet been peer reviewed. Purpose: We developed an artificial-intelligence system for analyzing scientific literature using recent advances in argument mining. Methodology: Scientific-quality criteria were drawn from two selected Cochrane systematic reviews. Four independent reviewers blindly scored 40 papers for each review on a 1–5 scale. These scores were compared with automatic analysis by MARGOT, which detected claims and supporting evidence. Results: MARGOT performed differently across the two reviews, with fair-to-moderate agreement between its most relevant metrics and both Cochrane and expert scores. Discussion and conclusions: The discrepancy may reflect a limitation of MARGOT, while agreement between human reviewers also suggests that the reviews differ in complexity. The preliminary results motivate broader evaluation with more topics and specialized reviewers."
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Evaluates argument mining as a rapid screening tool for assessing COVID-19 literature quality."
 
 tags: [selected]
 
@@ -96,6 +77,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: Publisher
   url: https://www.frontiersin.org/articles/10.3389/fpubh.2022.945181
 ---

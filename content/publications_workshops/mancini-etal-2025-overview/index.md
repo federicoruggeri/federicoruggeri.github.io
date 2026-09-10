@@ -53,7 +53,7 @@ abstract: 'We present an overview of the MM-ArgFallacy2025 shared task on Multim
   and misinformation detection capabilities.'
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Overview of MM-ArgFallacy2025, a shared task on multimodal fallacy detection and classification."
 
 tags: [workshop]
 
@@ -89,6 +89,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: ACL Anthology
   url: https://aclanthology.org/2025.argmining-1.35/
 ---

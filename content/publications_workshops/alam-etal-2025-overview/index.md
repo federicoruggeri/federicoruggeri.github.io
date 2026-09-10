@@ -17,7 +17,7 @@ authors:
 - Preslav Nakov
 - Federico Ruggeri
 - Sebastian Schellhammer
-- ' others'
+- others
 
 # Author notes (such as 'Equal Contribution')
 # A YAML list of notes for each author in the above `authors` list
@@ -43,7 +43,7 @@ doi: ''
 abstract: ''
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Overview of the CLEF 2025 CheckThat! Lab on subjectivity, fact-checking, claim normalization, and retrieval."
 
 tags: [workshop]
 

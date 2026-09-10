@@ -43,7 +43,7 @@ abstract: Creating balanced labeled textual corpora for complex tasks, like lega
   that our method is more robust than the alternatives.
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Combines WordNet and word embeddings for data augmentation in legal text classification."
 
 tags: [workshop]
 
@@ -79,6 +79,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: ACL Anthology
   url: https://aclanthology.org/2022.nllp-1.4
 ---

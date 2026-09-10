@@ -51,7 +51,7 @@ abstract: Disruptive situations are emotionally-charged events diverging from or
   of intelligent systems with a positive impact on public safety.
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Studies disruptive-situation detection on public transport using speech emotion recognition."
 
 tags:
 - selected
@@ -93,6 +93,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: Publisher
   url: https://www.sciencedirect.com/science/article/pii/S2667305323001308
 ---

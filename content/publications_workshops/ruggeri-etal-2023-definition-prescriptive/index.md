@@ -39,7 +39,7 @@ doi: ''
 abstract: ''
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Defines prescriptive annotation guidelines for language-agnostic subjectivity detection."
 
 tags: [workshop]
 

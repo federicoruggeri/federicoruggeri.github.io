@@ -34,7 +34,7 @@ doi: 10.1007/s10506-021-09288-2
 abstract: ''
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Uses memory networks to detect and explain unfair clauses in consumer contracts."
 
 tags: [selected]
 
@@ -70,6 +70,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: Publisher
   url: https://doi.org/10.1007/s10506-021-09288-2
 ---

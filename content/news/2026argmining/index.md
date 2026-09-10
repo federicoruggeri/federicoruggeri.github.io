@@ -7,7 +7,7 @@ tags:
   - argument mining
   - reasoning
 
-summary: "I'm co-organizing the 13th Workshop on Argument Minig and Reasoning (ArgMining 2026)"
+summary: "I'm co-organizing the 13th Workshop on Argument Mining and Reasoning (ArgMining 2026)"
 
 type: redirect
 target: https://nlp.unibo.it/news/argmining2026/

@@ -9,7 +9,7 @@ tags:
   - legal
   - event
  
-summary: "I was invited to give a talk about the academic reproducibility crysis."
+summary: "I was invited to give a talk about the academic reproducibility crisis."
 
 type: redirect
 target: https://nlp.unibo.it/news/equal/

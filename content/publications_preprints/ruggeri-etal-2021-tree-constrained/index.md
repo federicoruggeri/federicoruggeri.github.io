@@ -30,10 +30,10 @@ publication_short: ''
 
 doi: ''
 
-abstract: ''
+abstract: "We propose a novel graph neural network architecture inspired by tree kernels, which measure similarity between trees through shared substructures called fragments. Regularization constraints and a dedicated pooling mechanism incorporate fragments into node soft assignments. Experiments on sentence-classification tasks across several argument-mining corpora show competitive performance against state-of-the-art methods."
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Applies tree-constrained graph neural networks to argument mining."
 
 tags: [preprint]
 
@@ -69,6 +69,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: arXiv
   url: https://arxiv.org/abs/2110.00124
 ---

@@ -9,7 +9,7 @@ tags:
   - legal
   - event
  
-summary: "I was invited to give a talk about a how we can define interpretable models by teaching them to extract highlights from text"
+summary: "I was invited to give a talk about how we can define interpretable models by teaching them to extract highlights from text"
 
 type: redirect
 target: https://nlp.unibo.it/news/prima/

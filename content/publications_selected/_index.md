@@ -1,14 +1,13 @@
 ---
-title: Selected
+title: Selected Publications
 type: landing
-
 view: citation
 
 sections:
   - block: collection
     content:
       count: 0
-      title: Selected
+      title: Selected Publications
       text: ''
       filters:
         folders:

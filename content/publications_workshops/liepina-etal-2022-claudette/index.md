@@ -38,7 +38,7 @@ doi: ''
 abstract: ''
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Presents consumer-facing explanations of potentially unfair contract clauses through the CLAUDETTE tool."
 
 tags: [workshop]
 

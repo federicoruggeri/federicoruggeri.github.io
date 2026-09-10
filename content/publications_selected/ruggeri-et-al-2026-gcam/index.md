@@ -25,7 +25,7 @@ publishDate: '2026-03-02T16:18:34.217207Z'
 # Publication type.
 # A single CSL publication type but formatted as a YAML list (for Hugo requirements).
 publication_types:
-- journal-article
+- article-journal
 
 # Publication name and optional abbreviated publication name.
 publication: '*Transactions of the Association for Computational Linguistics (TACL)*'
@@ -33,10 +33,10 @@ publication_short: ''
 
 doi: ''
 
-abstract: We introduce Guideline-Centered Annotation Methodology (GCAM), a novel data methodology designed to report the annotation guidelines associated with each data instance. GCAM addresses four key limitations of the standard application of the prescriptive annotation methodology by reducing the information loss during annotation, ensuring adherence to guidelines, and enabling the efficient reuse of annotated data across multiple tasks that rely on the same guidelines. We evaluate GCAM with a focus on text classification tasks through (i) a human annotation study and (ii) an experimental evaluation with several machine learning models. guaranteeing a transparent evaluation of the successful application of the prescriptive paradigm and enabling a fine-grained model error analysis.
+abstract: We introduce Guideline-Centered Annotation Methodology (GCAM), a novel data methodology designed to report the annotation guidelines associated with each data instance. GCAM addresses four key limitations of the standard application of the prescriptive annotation methodology by reducing the information loss during annotation, ensuring adherence to guidelines, and enabling the efficient reuse of annotated data across multiple tasks that rely on the same guidelines. We evaluate GCAM with a focus on text classification tasks through (i) a human annotation study and (ii) an experimental evaluation with several machine learning models. This guarantees a transparent evaluation of the successful application of the prescriptive paradigm and enabling a fine-grained model error analysis.
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Introduces GCAM, a methodology that associates annotation guidelines with individual data instances."
 
 tags: ["selected"]
 
@@ -72,6 +72,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: arXiv PDF
   url: https://arxiv.org/pdf/2406.14099v2
 ---

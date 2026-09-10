@@ -14,12 +14,11 @@ status:
   icon: "☕️"
 role: Postdoctoral Research Fellow
 bio: |
-  I hold the position of Post-doc Research Fellow at the Computer Science and Engineering
-  Department (DISI) of the University of Bologna and I’m mainly researching knowledge extraction and Neuro-symbolic solutions for UKI.
-  
-  My main research area is integrating unstructured knowledge into deep learning models. I’m
-  currently focusing on Natural Language Processing (NLP) and Argument Mining, a branch
-  of NLP that aims at extracting arguments from unstructured texts.
+  I am a Postdoctoral Research Fellow in the Department of Computer Science and Engineering
+  (DISI) at the University of Bologna and a member of the Language Technologies Lab.
+  I develop natural language processing systems that extract structured knowledge from text
+  and integrate unstructured knowledge into interpretable models, with applications in
+  argument mining and legal analytics.
 affiliations:
   - name: Language Technologies Lab, University of Bologna
     url: https://nlp.unibo.it/
@@ -65,55 +64,51 @@ experience:
     org: University of Bologna
     start: 2025
     summary: |
-      Develop a transparent AI system that (i) processes legal documents (e.g., tax audit acts) to 
-      extract judicial principles of law; (ii) integrates domain-specific contextual knowledge, 
-      such as EU legal principles traceable back to the processed documents; (iii) produce 
-      a human-comprehensible explanation on the extraction process that is grounded on
-      the integrated knowledge.
+      I develop transparent AI systems that process legal documents, integrate traceable
+      domain knowledge such as EU legal principles, and produce human-readable explanations
+      grounded in that knowledge.
     button:
       text: View POLINE project
       url: https://site.unibo.it/poline/en
-      icon: hero/arrow-down-tray
+      icon: hero/arrow-top-right-on-square
   - role: Postdoctoral Research Fellow
     org: University of Bologna
     start: 2024
     end: 2025
     summary: |
-      Developing LLM-based solutions for industrial use cases that speed up existing user assistance systems while guaranteeing privacy.
+      Developed privacy-preserving, LLM-based solutions that improved user-assistance systems for industrial use cases.
     button:
       text: View BI-REX GeMEB and SmartCasm projects
       url: https://bi-rex.it/quarto-bando-bi-rex/
-      icon: hero/arrow-down-tray
+      icon: hero/arrow-top-right-on-square
   - role: Visiting Researcher
     org: Alan Turing Institute
     start: 2024
     end: 2025
     summary: |
-      Worked on two research papers on rumour verification and LLMs reasoning.
+      Conducted research on rumour verification and reasoning in LLMs, contributing to two papers.
   - role: Postdoctoral Research Fellow
     org: University of Bologna
     start: 2022
     end: 2024
     summary: |
-      Developed horizontal matchmaking solutions for ranking textual sources. 
-      These solutions should be compliant with AI-on-demand online services. 
-      Critical requirements concern textual sources maintenance.
+      Developed methods for ranking and matching textual sources in AI-on-demand services,
+      with emphasis on maintaining changing source collections.
     button:
       text: View AI4EU project
       url: https://www.ai4europe.eu/
-      icon: hero/arrow-down-tray
+      icon: hero/arrow-top-right-on-square
   - role: Postdoctoral Research Fellow
     org: University of Bologna
     start: 2021
     end: 2022
     summary: |
-      Developed NLP solutions for large-scale heterogeneous document matching. 
-      In particular, I’ve researched strategies for combining unstructured knowledge 
-      (e.g., textual documents, researcher profiles, user requests) and ontology knowledge graphs.
+      Developed NLP methods for large-scale heterogeneous document matching by combining
+      textual knowledge, researcher profiles, user requests, and ontology-based knowledge graphs.
     button:
       text: View StairwAI ICT-49 project
       url: https://stairwai.nws.cs.unibo.it/
-      icon: hero/arrow-down-tray
+      icon: hero/arrow-top-right-on-square
   - role: External Research Collaborator
     org: University of Modena and Reggio Emilia
     start: 2021
@@ -123,18 +118,18 @@ experience:
     button:
       text: View FISR-COVID 2020 AMICA project
       url: http://amica.unimore.it/
-      icon: hero/arrow-down-tray
+      icon: hero/arrow-top-right-on-square
   - role: Research Intern
     org: Ubiquitous Knowledge Processing (UKP) Lab
     start: 2021
     end: 2021
     summary: |
-      Developed of AI dialogue argumentative chatbots on scientific literature.
-      We investigated the impact of arguments in scientific papers to boost the capabilities of a dialogue agent.
+      Developed argumentative dialogue agents for discussing scientific literature and studied
+      how arguments in research papers can improve agent responses.
     button:
       text: View FISR-COVID 2020 AMICA project
       url: http://amica.unimore.it/
-      icon: hero/arrow-down-tray
+      icon: hero/arrow-top-right-on-square
   - role: Research Scholarship
     org: Magneti Marelli
     start: 2018
@@ -190,10 +185,10 @@ awards:
   - title: Outstanding Reviewer
     awarder: EMNLP
     date: "2024"
-    summary: selected as one of the top reviewers based on several factors, such as review quality, availability, and active interactions with peers.
+    summary: Selected as a top reviewer based on review quality, availability, and active interaction with peers.
     icon: hero/trophy
   - title: Visiting Researcher Recipient
     awarder: Future Artificial Intelligence Research (FAIR) Foundation
     date: "2024"
-    summary: Awarded 2.5k euros for a two-week visiting period. The objective is to strengthen the scientific research of both Italian and UK researchers, promote the internationalization and the cooperation between Italy and UK and foster the technology transfers for the national industrial and societal challenges in both countries.
+    summary: Awarded €2,500 for a two-week research visit supporting collaboration between Italian and UK researchers.
     icon: hero/academic-cap

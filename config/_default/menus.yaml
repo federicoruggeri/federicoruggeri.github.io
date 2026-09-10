@@ -1,6 +1,6 @@
-# Primary and secondary navigation.
-# Academic pages stay at the top level. Related outputs live under Research,
-# while non-academic work has its own Personal Projects entry.
+# Primary navigation.
+# Academic pages stay at the top level. Research software and shared tasks are
+# collected on the Research page, while non-academic work has its own entry.
 
 main:
   - name: Home
@@ -8,21 +8,8 @@ main:
     weight: 10
 
   - name: Research
-    identifier: research
     url: /research/
     weight: 20
-  - name: Lab research topics
-    parent: research
-    url: https://nlp.unibo.it/students/
-    weight: 21
-  - name: Tools
-    parent: research
-    url: /tools/
-    weight: 22
-  - name: Shared Tasks
-    parent: research
-    url: /sharedtasks/
-    weight: 23
 
   - name: Publications
     url: /publications/

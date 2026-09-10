@@ -48,7 +48,7 @@ doi: ''
 abstract: ''
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Overview of the CLEF 2023 CheckThat! Lab task on subjectivity detection."
 
 tags: [workshop]
 

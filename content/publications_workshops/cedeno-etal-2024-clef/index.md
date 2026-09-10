@@ -59,7 +59,7 @@ abstract: 'The first five editions of the CheckThat! lab focused on the main tas
   multilingual and multimodal settings.'
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Presents the CLEF 2024 CheckThat! Lab tasks on information verification and adversarial robustness."
 
 tags:
 - workshop
@@ -104,6 +104,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: Publisher
   url: https://doi.org/10.1007/978-3-031-56069-9_62
 ---

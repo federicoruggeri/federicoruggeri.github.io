@@ -48,7 +48,7 @@ abstract: 'Natural Language Processing (NLP) can provide tools for analyzing spe
   that might be triggering for some individuals.'
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Uses NLP methods to study offensive language through Grice’s cooperative principle."
 
 tags: [workshop]
 
@@ -84,6 +84,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: ACL Anthology
   url: https://aclanthology.org/2024.luhme-1.2/
 ---

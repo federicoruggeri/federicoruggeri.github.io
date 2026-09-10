@@ -13,7 +13,7 @@ sections:
   - block: collection
     content:
       count: 0
-      title: Selected
+      title: Selected Publications
       text: ''
       filters:
         folders:
@@ -33,7 +33,7 @@ sections:
       view: citation
   - block: collection
     content:
-      title: Journals
+      title: Journal Articles
       text: ''
       filters:
         folders:
@@ -43,7 +43,7 @@ sections:
       view: citation
   - block: collection
     content:
-      title: Conference
+      title: Conference Papers
       text: ''
       filters:
         folders:
@@ -53,7 +53,7 @@ sections:
       view: citation
   - block: collection
     content:
-      title: Workshops
+      title: Workshop Papers
       text: ''
       filters:
         folders:

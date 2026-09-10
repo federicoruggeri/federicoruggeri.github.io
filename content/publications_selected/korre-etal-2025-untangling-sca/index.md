@@ -47,7 +47,7 @@ abstract: 'Hate speech relies heavily on cultural influences, leading to varying
   of definitions used in the prompt.'
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Analyzes how hate-speech definitions vary across cultures and domains."
 
 tags: [selected]
 
@@ -83,6 +83,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: ACL Anthology
   url: https://aclanthology.org/2025.findings-naacl.175/
 ---

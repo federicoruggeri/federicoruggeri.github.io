@@ -42,15 +42,15 @@ abstract: Although LLMs have shown great performance on Mathematics and Coding r
   use this framework to create RECV, the first claim verification benchmark, incorporating
   real-world claims, to assess the deductive and abductive reasoning capabilities
   of LLMs. The benchmark comprises of three datasets, covering reasoning problems
-  of in creasing complexity. We evaluate three state of-the-art proprietary LLMs under
+  of increasing complexity. We evaluate three state of-the-art proprietary LLMs under
   multiple prompt settings. Our results show that while LLMs can address deductive
-  reasoning prob lems, they consistently fail in cases of abductive reasoning. Moreover,
+  reasoning problems, they consistently fail in cases of abductive reasoning. Moreover,
   we observe that enhancing LLMs with rationale generation is not always beneficial.
   Nonetheless, we find that generated rationales are semantically similar to those
-  provided by humans, especially in deduc tive reasoning cases.
+  provided by humans, especially in deductive reasoning cases.
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Introduces RECV, a benchmark for evaluating deductive and abductive reasoning in evidence-based claim verification."
 
 tags: [selected]
 
@@ -86,6 +86,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: ACL Anthology
   url: https://aclanthology.org/2025.findings-acl.1059/
 ---

@@ -6,15 +6,13 @@ tags:
   - CLEF
   - subjectivity detection
   
-summary: "We describe the seventh edition of the CheckThat! lab, part of the 2023 Conference and Labs of the Evaluation Forum (CLEF). "
+summary: "We describe the sixth edition of the CheckThat! Lab, part of the 2023 Conference and Labs of the Evaluation Forum (CLEF)."
 
-type: redirect
-target: https://nlp.unibo.it/events/2023clef/
 ---
 
 ##### Resources
 
-+ [CheckThat! 2025](https://checkthat.gitlab.io/clef2023/)
++ [CheckThat! 2023](https://checkthat.gitlab.io/clef2023/)
 + [Paper](paper.pdf)
 
 ---

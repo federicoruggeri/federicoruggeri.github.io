@@ -53,7 +53,7 @@ abstract: Argument structure prediction aims to identify the relations between a
   networks yields the best results.
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Predicts argument structures in Court of Justice of the European Union decisions concerning fiscal state aid."
 
 tags:
 - conference
@@ -94,6 +94,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: Publisher
   url: https://doi.org/10.1145/3594536.3595174
 ---

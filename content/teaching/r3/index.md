@@ -14,7 +14,7 @@ summary: "This PhD course introduces and discusses the concept of 'reproducibili
 
 ## Course Repository
 
-The official course repository containing all the relevant material (slides, recordings, images, etc..) is: https://github.com/federicoruggeri/phdlectures-r3
+[Open the course repository](https://github.com/federicoruggeri/phdlectures-r3) for slides, recordings, images, and supporting material.
 
 ## Introduction
 
@@ -24,12 +24,12 @@ Paradoxically, researchers are struggling even more to reproduce published resea
 
 In this course, we'll introduce and discuss the concept of 'reproducibility' in research. In particular, we'll overview current issues in research and existing attempts to address them. We'll focus on data curation, experimental setup, model comparison, and programming best practices.
 
-This course is recommended for all types of researchers, from those who have just embarked on their journey to those who have always wondered how certain research managed to get published. See Section Prerequisites for more details.
+This course is designed for researchers at different career stages, from those beginning their research journey to experienced practitioners seeking stronger reproducibility practices. See the prerequisites below for more details.
 
 ## Part 1: Reproducibility in Research
 
-We discuss the current risks in doing research nowadays, characterized by non-reproducible findings, non publicly available resources (e.g., data, code, artifacts), an incredible and non-sustainable urge of publishing large amounts of papers in short time.
-In this world, either as an aspiring or experience researcher, would you accept (trust) a work that (i) doesn't provide sufficient information for reproducibility; (ii) doesn't provide any code; (iii) doesn't provide the data/guidelines for collecting their contributing dataset; (iv) doesn't provide training details like model hyper-parameters and data partitioning.
+We discuss risks in contemporary research, including non-reproducible findings, unavailable resources such as data and code, and unsustainable pressure to publish quickly.
+Whether you are an aspiring or experienced researcher, assessing trust requires asking whether a study provides enough methodological detail, code, data or collection guidelines, hyperparameters, and data-partitioning information for independent reproduction.
 
 ##### Lecture recordings
 
@@ -120,15 +120,15 @@ One of these solutions in accordance with reproducible research is represented b
 
 ## Part 5: Programming Best Practices
 
-Whether you like it or not, experimental setting might require you to do some coding stuff.
+Reproducible experimental work also requires sound programming practice.
 
-Coding translates to:
+Research code should support:
 
-- Transparency (don't you dare do some cheap tricks!)
-- Correctness (your code should reflect your paper statements)
-- Readability (please, don't make this a nightmare)
-- Efficiency (time is money)
-- Maintainability (I'm sure you'll re-use this code)
+- **Transparency:** make assumptions and processing steps explicit.
+- **Correctness:** ensure implementation matches claims in the paper.
+- **Readability:** help collaborators and reviewers understand the code.
+- **Efficiency:** use computational resources responsibly.
+- **Maintainability:** make later reuse and extension practical.
 
 ##### Lecture recordings
 
@@ -147,9 +147,9 @@ Coding translates to:
 + [Python CLI Tricks That Don't Require Any Code Whatsoever](https://martinheinz.dev/blog/83)
 + [Profiling and Analyzing Performance of Python Programs](https://martinheinz.dev/blog/64)
 
-## Part 6: Cinnamon, a lightweight python library for research
+## Part 6: Cinnamon, a lightweight Python library for research
 
-Cinnamon is a lightweight library for general-purpose configuration and code logic de-coupling.
+Cinnamon is a lightweight library for separating configuration from application logic.
 
 ##### Lecture recordings
 
@@ -157,7 +157,7 @@ Cinnamon is a lightweight library for general-purpose configuration and code log
 
 ##### Readings
 
-+ [Cinnamon Documentation](https://nlp-unibo.github.io/cinnamon/overview.html)
++ [Cinnamon Documentation](https://nlp.unibo.it/cinnamon/overview.html)
 
 ## Course History
 
@@ -166,7 +166,7 @@ Cinnamon is a lightweight library for general-purpose configuration and code log
 
 ## Course Info
 
-16 Hours Lecture Format: 2 hour-long hybrid lectures.
+16 hours total: eight 2-hour hybrid lectures.
 
 ## Prerequisites
 

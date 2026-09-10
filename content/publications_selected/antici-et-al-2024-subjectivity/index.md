@@ -47,7 +47,7 @@ abstract: We develop novel annotation guidelines for sentence-level subjectivity
   trained in the multilingual setting achieve the best performance on the task.
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Introduces annotation guidelines and an English news corpus for sentence-level subjectivity detection."
 
 tags: ["selected"]
 
@@ -83,6 +83,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: ACL Anthology
   url: https://aclanthology.org/2024.lrec-main.25
 ---

@@ -46,7 +46,7 @@ abstract: Multimodal Argument Mining (MAM) is a recent area of research aiming t
   in MAM require novel annotation processes to encompass auditory cues effectively.
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Introduces MAMKit, a toolkit for multimodal argument mining."
 
 tags: [workshop]
 
@@ -82,6 +82,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: ACL Anthology
   url: https://aclanthology.org/2024.argmining-1.7
 ---

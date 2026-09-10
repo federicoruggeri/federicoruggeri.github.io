@@ -53,7 +53,7 @@ abstract: 'Misogyny is often expressed through figurative language. Some neutral
   of pejorative epithets by means of contextual word embeddings analysis and prompting.'
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Introduces PejorativITy, an Italian resource for disambiguating pejorative epithets in misogyny detection."
 
 tags: [selected]
 
@@ -89,6 +89,6 @@ image:
 #   Otherwise, set `projects: []`.
 projects: []
 links:
-- name: URL
+- name: ACL Anthology
   url: https://aclanthology.org/2024.lrec-main.1112
 ---

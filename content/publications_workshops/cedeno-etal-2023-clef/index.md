@@ -53,7 +53,7 @@ abstract: 'The five editions of the CheckThat! lab so far have focused on the ma
   authorities that should be trusted to verify a contended claim.'
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Presents the CLEF 2023 CheckThat! Lab tasks on check-worthiness, subjectivity, political bias, factuality, and authority."
 
 tags: [workshop]
 

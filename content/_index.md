@@ -50,18 +50,14 @@ sections:
       title: '📚 Research Focus'
       subtitle: ''
       text: |-
-        I'm a postdoctoral research fellow in Bologna, Italy, at Language Technologies Lab.
-        
-        The aim of my research is to devise Natural Language Processing (NLP) systems that learn to generate, distill, and use knowledge from unstructured text.\
-        During my research activity, I have taken several steps towards this ultimate goal of learning with knowledge, with applications in Argument Mining and Legal Analytics. 
-        
-        I'm pursuing these efforts by focusing on two main directions: 
-        
-        **Unstructured Knowledge Integration**\
-        The capability of models to leverage a large amount of unstructured textual knowledge to address specific problems.
-        
-        **Structured Knowledge Extraction from Text**\
-        The capability of models to extract structured knowledge from raw text.
+        I study how natural language processing systems can generate, distill, and use
+        knowledge from unstructured text. My work focuses on interpretable methods for
+        argument mining and legal analytics along two complementary directions:
+
+        - **Unstructured Knowledge Integration (UKI):** enabling models to use large collections of textual knowledge when addressing a task.
+        - **Structured Knowledge Extraction from Text:** distilling structured, human-interpretable knowledge from raw text.
+
+        [Read my research statement](/research/statement/)
     design:
       columns: '1'
   - block: collection

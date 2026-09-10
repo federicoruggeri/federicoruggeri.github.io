@@ -17,7 +17,7 @@ authors:
 - Tommaso Caselli
 - Giovanni Da San Martino
 - Fatima Haouari
-- ' others'
+- others
 
 # Author notes (such as 'Equal Contribution')
 # A YAML list of notes for each author in the above `authors` list
@@ -43,7 +43,7 @@ doi: ''
 abstract: ''
 
 # Summary. An optional shortened abstract.
-summary: ''
+summary: "Overview of the CLEF 2024 CheckThat! Lab and its information-verification tasks."
 
 tags: [workshop]
 
