@@ -47,14 +47,10 @@ interests:
 education:
   - degree: PhD Computer Science
     institution: University of Bologna
-    start: 2021
-    end: 2018
+    start: 2018
+    end: 2022
     summary: |
       Thesis on integrating knowledge into deep learning models in the field of NLP.
-    button:
-      text: Download dissertation
-      url: /cv.pdf
-      icon: hero/arrow-down-tray
   - degree: MS Computer Science
     institution: University of Bologna
     start: 2015

@@ -15,10 +15,6 @@ sections:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
       text: ''
-      # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: cv/cv.pdf
       headings:
         about: ''
         education: ''
@@ -37,6 +33,18 @@ sections:
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
+  - block: cta-button-list
+    content:
+      buttons:
+        - text: Download CV
+          url: /cv/cv.pdf
+          icon: hero/arrow-down-tray
+        - text: Research statement
+          url: /research/statement/statement.pdf
+          icon: hero/document-text
+    design:
+      spacing:
+        padding: [0, 0, 2rem, 0]
   - block: markdown
     content:
       title: '📚 Research Topics'

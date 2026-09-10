@@ -1,152 +1,94 @@
-# [The Academic CV That Gets You Hired](https://github.com/HugoBlox/hugo-theme-academic-cv)
+# Federico Ruggeri — personal academic website
 
-[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/academic-cv/start/?utm_source=github&utm_medium=readme)
+Source for [federicoruggeri.github.io](https://federicoruggeri.github.io), built with [Hugo](https://gohugo.io/) and [HugoBlox](https://hugoblox.com/).
 
-<h1 align="center">The Portfolio That Works While You Sleep</h1>
+## Production
 
-<p align="center">
-  <strong>Your unfair advantage in academia.</strong><br/>
-  Stop sending PDFs into the void. Build a living portfolio that boosts citations and lands offers.<br/>
-  Trusted by 250,000+ researchers at <strong>MIT, Stanford, and Google</strong>.
-</p>
+- Source branch: `academic-template`
+- Host: GitHub Pages
+- Deployment workflow: `.github/workflows/hugo.yml`
+- Production URL: <https://federicoruggeri.github.io>
 
-<p align="center">
-  <a href="https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme"><b>🚀 Launch Free (60s)</b></a>
-  &nbsp;•&nbsp;
-  <a href="https://hugoblox.com/templates/?open=academic-cv&loading=true&utm_source=github&utm_medium=readme">Live Demo</a>
-  &nbsp;•&nbsp;
-  <a href="https://marketplace.visualstudio.com/items?itemName=ownable.ownable"><b>Visual Editor</b></a>
-</p>
+Pushing to `academic-template` starts the GitHub Pages deployment. Review and validate changes before pushing.
 
-<p align="center">
-  <a href="https://discord.gg/z8wNYzb"><img src="https://img.shields.io/discord/722225264733716590?label=Join%20Discord&style=social" alt="Discord"></a>
-  <a href="https://github.com/HugoBlox/hugo-theme-academic-cv"><img src="https://img.shields.io/github/stars/HugoBlox/hugo-theme-academic-cv?label=Star%20Academic%20CV&style=social" alt="GitHub Stars"></a>
-</p>
+## Local development
 
----
+Prerequisites:
 
-## Why This Template?
-
-Most CVs are static PDFs that get lost in the pile. This is an **intelligent portfolio** that works 24/7 to advance your career.
-
-- **🔮 Future-Proof:** Your content lives in simple **Markdown**. No database to break, no lock-in.
-- **🤖 AI-Ready:** Optimized for search engines and LLMs, so your work is found and cited.
-- **⚡ Zero Maintenance:** Auto-import citations from BibTeX and focus on research.
-- **✍️ Edit Visually:** Use **HugoBlox Studio** in VS Code — no coding needed. Full capabilities in Pro.
-
-<p align="center">
-  <a href="https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme">
-    <img src="https://img.shields.io/badge/⚡️%20Get%20Your%20CV%20in%2060s-ff4655?style=for-the-badge" 
-    alt="Deploy this template" width="400">
-  </a>
-</p>
-
-![HugoBlox Studio in Action](https://raw.githubusercontent.com/HugoBlox/kit/main/.github/media/studio/slide-1.webp)
-*HugoBlox Studio: Drag-and-drop page builder inside VS Code.*
-
-> "My citations went up 3x after switching to this template. The citation auto-sync feature is a lifesaver."
-> — **Dr. Zhang**, AI Research Scientist, Meta
-
----
-
-## Who This Is For
-
-- Students and grads applying to top labs and industry roles
-- Researchers who want a living, citable portfolio
-- Faculty/PIs showcasing publications, talks, and group news
-
----
-
-## Features
-
-| Feature | Benefit |
-| :--- | :--- |
-| **Markdown, Jupyter, RStudio** | Write in the tools you already use. |
-| **Auto-Update Citations** | Drop in a BibTeX file; formatted lists generated automatically. |
-| **Visual Editor** | Drag-and-drop blocks to build pages in minutes. |
-| **Global CDN** | Blazing fast load times (100/100 Lighthouse scores). |
-| **Privacy First** | You own your data. Host for free on GitHub Pages. |
-
----
-
-## Notebook → Posts and Slides
-
-- Publish your actual `.ipynb` as beautiful long-form posts — code, outputs, and narrative kept intact.
-- Slides in Markdown with Reveal.js: math, syntax highlight, diagrams, speaker notes.
-- Coming soon: **Notebook → Slides (beta)**. Request early access in Discord.
-
-Learn more: docs on [Notebooks](https://docs.hugoblox.com/reference/markdown/#-notebooks) and [Slides](https://docs.hugoblox.com/guides/slides/).
-
----
-
-## Why Go Plus (from $4/m)
-
-- Enhanced HugoBlox Studio visual editor — save 10–20 hours setting up and polishing
-- Make an unforgettable first impression
-- Priority support
-
----
-
-## Free vs Pro
-
-| Feature | Academic CV (Free) | Academic CV Pro & Resumé Pro |
-| --- | --- | --- |
-| Design | Professional & clean | Premium designs |
-| Layouts | Standard sections | Advanced timelines & layouts |
-| Courses/Lectures | Basic | Fully-Featured |
-| First Impression | Strong | Unforgettable |
-| Discord Support | Community | Priority |
-
-<p align="center">
-  <a href="https://hugoblox.com/pricing?utm_source=github&utm_medium=readme"><b>💎 Upgrade to Pro</b></a><br/>
-  <a href="https://hugoblox.com/templates/academic-cv-pro/start?utm_source=github&utm_medium=readme">✨ Deploy Academic CV Pro</a>
-  &nbsp;•&nbsp;
-  <a href="https://hugoblox.com/templates/resume-pro/start?utm_source=github&utm_medium=readme">📄 Deploy Resumé Pro</a>
-</p>
-
----
-
-## Get Started
-
-### Option 1: No-Code (Fastest)
-Launch a fully hosted site in your browser. No software to install.
-
-👉 [**Launch in Browser (Free)**](https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme)
-
-### Option 2: Studio (Visual Editor)
-1) Install [HugoBlox Studio](https://marketplace.visualstudio.com/items?itemName=ownable.ownable) for VS Code  
-2) Open this project and edit visually
-
-### Option 3: CLI (Developers)
-1) Install [Hugo](https://docs.hugoblox.com/start/cli/)
-2) Create your site with the CLI:
+- Hugo Extended `0.156.0` (the version declared in `hugoblox.yaml`)
+- Node.js
+- pnpm `10.14.0` (the version declared in `package.json`)
+- Go, for Hugo modules
 
 ```bash
-npx hugoblox create site --template academic-cv
+corepack enable
+pnpm install
+pnpm run dev
 ```
 
----
+The development server is normally available at <http://localhost:1313>.
 
-## FAQ
+Build the production site and Pagefind index with:
 
-- Do I need to know Hugo? No — you can edit visually or write Markdown.
-- Can I host for free? Yes — GitHub Pages/Netlify are supported.
-- Can I export/migrate later? Yes — your site is just files.
-- Can I cancel Pro anytime? Yes.
+```bash
+pnpm run build
+```
 
----
+Generated output is written to `public/` and must not be edited manually.
 
-## Community & Support
+> The deployment workflow currently uses a slightly different Hugo and dependency-install path. Toolchain alignment is tracked as a follow-up maintenance task.
 
-- 💬 [**Discord Community**](https://discord.gg/z8wNYzb)
-- 📚 [**Documentation**](https://docs.hugoblox.com/?utm_source=github&utm_medium=readme)
-- 🐦 [**Follow on X**](https://x.com/MakeOwnable)
-- ⭐ [**Star on GitHub**](https://github.com/HugoBlox/kit)
+## Content map
 
----
+| Area | Location |
+|---|---|
+| Homepage | `content/_index.md` |
+| Profile, education, experience | `data/authors/me.yaml` |
+| Research | `content/research/` |
+| Publications | `content/publications*/` |
+| Teaching | `content/teaching/` |
+| News | `content/news/` |
+| Tools and shared tasks | `content/tools/`, `content/sharedtasks/` |
+| Personal projects and modding | `content/modding/` |
+| Navigation | `config/_default/menus.yaml` |
+| Site settings and metadata | `config/_default/params.yaml` |
+| Static files such as the CV | `static/` |
 
-MIT © 2016-Present [George Cushen](https://georgecushen.com)
+## Common updates
 
-<!--START_SECTION:news-->
-<!--Updated at 2026-02-22T01:11:53.876Z-->
-<!--END_SECTION:news-->
+### CV
+
+Replace `static/cv/cv.pdf` while keeping the path unchanged, then verify:
+
+- <https://federicoruggeri.github.io/cv/cv.pdf>
+
+### Research statement
+
+Update both the page and its PDF under `content/research/statement/`. The homepage links directly to:
+
+- `/research/statement/statement.pdf`
+
+### Publications
+
+Publication records are Hugo leaf bundles. Keep each record in its own `index.md` and verify titles, authors, dates, publication type, and external links before publishing.
+
+### Draft content
+
+Set the following in front matter to keep unfinished content out of production:
+
+```yaml
+draft: true
+```
+
+## Pre-deployment checklist
+
+1. Confirm `git status` contains only intended changes.
+2. Run `pnpm run build` with the pinned local toolchain.
+3. Review Hugo warnings.
+4. Check the homepage, navigation, publication pages, CV, and research-statement links.
+5. Test keyboard navigation and representative mobile layouts.
+6. Push only after the production build passes.
+
+## License
+
+Website content uses the Creative Commons settings declared in `config/_default/params.yaml`. HugoBlox and other dependencies retain their own licenses.

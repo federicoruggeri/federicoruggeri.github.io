@@ -3,6 +3,7 @@ title: "Example Talk: Recent Work"
 date: 2024-01-01
 # `type: slides` is inferred from folder, but can be set explicitly:
 type: slides
+draft: true
 summary: "A quick tour of recent research highlights: multimodal LLMs, efficient training, and responsible AI."
 slides:
   theme: black  # Options: black, white, league, beige, sky, night, serif, simple, solarized
