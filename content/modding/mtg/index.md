@@ -10,6 +10,8 @@ tags:
 summary: "``Cards were thought, cards were created, images were retrieved, flavour texts were made up and, eventually, cards were balahahhanced.'' MTG motto."
 ---
 
+> **Personal-project archive.** Created in 2019, this fictional custom card set is built around parody and private jokes. It contains mature, dated, or potentially offensive language and imagery. It is preserved as personal creative work and is unrelated to my academic research.
+
 ## Milo the Gathering
 
 What if Magic The Gathering meets Noobsville and all its friends? This project was originally proposed as a way to encourage Milo (iCe-SouL) to join his long-time friends to play MTG online.

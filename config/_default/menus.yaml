@@ -1,36 +1,45 @@
-# Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-  #     desired widget in your `content/home/` folder.
-  #   The weight parameter defines the order that the links will appear in.
+# Primary and secondary navigation.
+# Academic pages stay at the top level. Related outputs live under Research,
+# while non-academic work has its own Personal Projects entry.
 
 main:
-  - name: Bio
+  - name: Home
     url: /
     weight: 10
+
   - name: Research
-    url: /research
-    weight: 11
-  - name: Publications
-    url: /publications
-    weight: 12
-  - name: Teaching
-    url: /teaching
-    weight: 13
-  - name: News
-    url: /news
-    weight: 14
-  - name: Experience
-    url: experience/
+    identifier: research
+    url: /research/
     weight: 20
+  - name: Lab research topics
+    parent: research
+    url: https://nlp.unibo.it/students/
+    weight: 21
   - name: Tools
-    url: tools/
-    weight: 30
+    parent: research
+    url: /tools/
+    weight: 22
   - name: Shared Tasks
-    url: sharedtasks/
-    weight: 35
-  - name: Modding
-    url: modding/
+    parent: research
+    url: /sharedtasks/
+    weight: 23
+
+  - name: Publications
+    url: /publications/
+    weight: 30
+
+  - name: Teaching
+    url: /teaching/
     weight: 40
-  - name: Tags
-    url: tags/
-    weight: 45
+
+  - name: Experience
+    url: /experience/
+    weight: 50
+
+  - name: Personal Projects
+    url: /modding/
+    weight: 60
+
+  - name: CV
+    url: /cv/cv.pdf
+    weight: 70

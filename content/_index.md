@@ -47,7 +47,7 @@ sections:
         padding: [0, 0, 2rem, 0]
   - block: markdown
     content:
-      title: '📚 Research Topics'
+      title: '📚 Research Focus'
       subtitle: ''
       text: |-
         I'm a postdoctoral research fellow in Bologna, Italy, at Language Technologies Lab.
