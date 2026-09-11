@@ -694,7 +694,7 @@ The tool designed for joining together our souls is called Cockatrice (no pun in
 
 ### Download MTG custom set
 
-The next step consists in downloading and adding the Milo The Gathering (MTG) custom set to Cockatrice. You can download cards images and software specific XML file [here]("./cockatrice/Cockatrice.zip").
+The next step consists in downloading and adding the Milo The Gathering (MTG) custom set to Cockatrice. You can download cards images and software specific XML file [here](cockatrice/Cockatrice.zip).
 
 Once you have downloaded the MTG custom set, all you need is to add it to Cockatrice. To this end, open Cockatrice -> Card Database -> Add custom sets/cards -> Select the custom set XML file.
 

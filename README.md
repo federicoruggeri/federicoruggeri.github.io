@@ -16,8 +16,8 @@ Pushing to `academic-template` starts the GitHub Pages deployment. Review and va
 Prerequisites:
 
 - Hugo Extended `0.156.0` (the version declared in `hugoblox.yaml`)
-- Node.js
-- pnpm `10.14.0` (the version declared in `package.json`)
+- Node.js `22`
+- pnpm `10.14.0` (the version declared in `package.json`, installed with `corepack`)
 - Go, for Hugo modules
 
 ```bash
@@ -36,7 +36,11 @@ pnpm run build
 
 Generated output is written to `public/` and must not be edited manually.
 
-> The deployment workflow currently uses a slightly different Hugo and dependency-install path. Toolchain alignment is tracked as a follow-up maintenance task.
+Pull requests run `.github/workflows/ci.yml`, which builds the site with the same pinned toolchain and checks internal links with `scripts/check_internal_links.py`. Run the same check locally with:
+
+```bash
+python3 scripts/check_internal_links.py public
+```
 
 ## Content map
 
@@ -84,7 +88,7 @@ draft: true
 
 1. Confirm `git status` contains only intended changes.
 2. Run `pnpm run build` with the pinned local toolchain.
-3. Review Hugo warnings.
+3. Review Hugo warnings and run `python3 scripts/check_internal_links.py public`.
 4. Check the homepage, navigation, publication pages, CV, and research-statement links.
 5. Test keyboard navigation and representative mobile layouts.
 6. Push only after the production build passes.
