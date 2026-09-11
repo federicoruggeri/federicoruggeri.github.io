@@ -39,7 +39,6 @@ publication_types:
 publication: '*Advances in Information Retrieval*'
 publication_short: ''
 
-doi: ''
 
 abstract: 'The five editions of the CheckThat! lab so far have focused on the main
   tasks of the information verification pipeline: check-worthiness, evidence retrieval
@@ -61,7 +60,6 @@ tags: [workshop]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

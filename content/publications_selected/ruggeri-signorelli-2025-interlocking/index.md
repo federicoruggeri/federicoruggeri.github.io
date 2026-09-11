@@ -28,7 +28,9 @@ publication: '*Proceedings of the 63rd Annual Meeting of the Association for Com
   Linguistics (Volume 1: Long Papers)*'
 publication_short: ''
 
-doi: 10.18653/v1/2025.acl-long.59
+hugoblox:
+  ids:
+    doi: 10.18653/v1/2025.acl-long.59
 
 abstract: A popular end-to-end architecture for selective rationalization is the select-then-predict
   pipeline, comprising a generator to extract highlights fed to a predictor. Such
@@ -51,7 +53,6 @@ tags: [selected]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

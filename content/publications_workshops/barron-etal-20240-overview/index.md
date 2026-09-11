@@ -38,7 +38,6 @@ publication: '*International Conference of the Cross-Language Evaluation Forum f
   European Languages*'
 publication_short: ''
 
-doi: ''
 
 abstract: ''
 
@@ -51,7 +50,6 @@ tags: [workshop]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

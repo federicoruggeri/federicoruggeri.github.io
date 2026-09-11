@@ -32,7 +32,9 @@ publication_types:
 publication: '*J. Artif. Intell. Res.*'
 publication_short: ''
 
-doi: 10.1613/JAIR.1.16406
+hugoblox:
+  ids:
+    doi: 10.1613/JAIR.1.16406
 
 abstract: ''
 
@@ -45,7 +47,6 @@ tags: [selected]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

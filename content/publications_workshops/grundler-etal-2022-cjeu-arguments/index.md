@@ -36,7 +36,6 @@ publication: '*Proceedings of the 9th Workshop on Argument Mining, ArgMining@COL
   2022, Online and in Gyeongju, Republic of Korea, October 12 - 17, 2022*'
 publication_short: ''
 
-doi: ''
 
 abstract: "We present Demosthenes, a corpus for argument mining in legal documents composed of 40 Court of Justice of the European Union decisions on fiscal state aid. Annotations cover argumentative elements, their types, and argument schemes. The experimental evaluation addresses four classification tasks using advanced language models and traditional classifiers."
 
@@ -49,7 +48,6 @@ tags: [workshop]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

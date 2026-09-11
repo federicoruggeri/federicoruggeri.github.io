@@ -39,7 +39,9 @@ publication: '*Advances in Information Retrieval: 46th European Conference on In
   Retrieval, ECIR 2024, Glasgow, UK, March 24–28, 2024, Proceedings, Part V*'
 publication_short: ''
 
-doi: 10.1007/978-3-031-56069-9_62
+hugoblox:
+  ids:
+    doi: 10.1007/978-3-031-56069-9_62
 
 abstract: 'The first five editions of the CheckThat! lab focused on the main tasks
   of the information verification pipeline: check-worthiness, evidence retrieval and
@@ -76,7 +78,6 @@ tags:
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

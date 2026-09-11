@@ -40,7 +40,6 @@ publication: '*Working Notes of the Conference and Labs of the Evaluation Forum 
   2024), Grenoble, France, 9-12 September, 2024*'
 publication_short: ''
 
-doi: ''
 
 abstract: ''
 
@@ -53,7 +52,9 @@ tags: [workshop]
 featured: false
 
 # Links
-url_pdf: https://ceur-ws.org/Vol-3740/paper-25.pdf
+links:
+  - type: pdf
+    url: https://ceur-ws.org/Vol-3740/paper-25.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''

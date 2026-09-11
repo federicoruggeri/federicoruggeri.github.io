@@ -36,7 +36,9 @@ publication: '*Proceedings of the Thirty-First International Joint Conference on
   Intelligence, IJCAI 2022, Vienna, Austria, 23-29 July 2022*'
 publication_short: ''
 
-doi: 10.24963/ijcai.2022/857
+hugoblox:
+  ids:
+    doi: 10.24963/ijcai.2022/857
 
 abstract: ''
 
@@ -49,7 +51,6 @@ tags: [conference]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

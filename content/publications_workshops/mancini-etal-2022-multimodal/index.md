@@ -30,7 +30,6 @@ publication: '*Proceedings of the 9th Workshop on Argument Mining, ArgMining@COL
   2022, Online and in Gyeongju, Republic of Korea, October 12 - 17, 2022*'
 publication_short: ''
 
-doi: ''
 
 abstract: "We study multimodal argument mining in political debates by collating and extending existing corpora and conducting an initial evaluation of multimodal architectures, with emphasis on input-encoding methods. The results indicate directions for future work in this domain."
 
@@ -43,7 +42,6 @@ tags: [workshop]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

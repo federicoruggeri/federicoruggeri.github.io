@@ -29,7 +29,9 @@ publication_types:
 publication: '*Intelligent Systems with Applications*'
 publication_short: ''
 
-doi: https://doi.org/10.1016/j.iswa.2023.200305
+hugoblox:
+  ids:
+    doi: https://doi.org/10.1016/j.iswa.2023.200305
 
 abstract: Disruptive situations are emotionally-charged events diverging from ordinary
   behavior, like people fighting or screaming. Public transports are one type of social
@@ -65,7 +67,6 @@ tags:
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

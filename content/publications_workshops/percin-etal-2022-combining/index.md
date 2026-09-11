@@ -32,7 +32,6 @@ publication_types:
 publication: '*Proceedings of the Natural Legal Language Processing Workshop 2022*'
 publication_short: ''
 
-doi: ''
 
 abstract: Creating balanced labeled textual corpora for complex tasks, like legal
   analysis, is a challenging and expensive process that often requires the collaboration
@@ -51,7 +50,6 @@ tags: [workshop]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

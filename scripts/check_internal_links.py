@@ -9,8 +9,9 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 # Assumes the well-formed HTML that Hugo generates; raw HTML in Markdown may slip past.
+# The lookbehind skips Alpine bindings (:src=, x-bind:href=) and JS property writes (el.src=).
 LINK_RE = re.compile(
-    r'(?:href|src)\s*=\s*(?:"([^"]*)"|\'([^\']*)\'|([^\s">]+))', re.IGNORECASE
+    r'(?<![:.\w])(?:href|src)\s*=\s*(?:"([^"]*)"|\'([^\']*)\'|([^\s">]+))', re.IGNORECASE
 )
 SKIP_PREFIXES = ("http://", "https://", "mailto:", "tel:", "data:", "javascript:", "#", "//")
 

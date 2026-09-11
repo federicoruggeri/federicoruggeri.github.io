@@ -33,7 +33,9 @@ publication: '*Legal Knowledge and Information Systems - JURIX 2019: The Thirty-
   Annual Conference, Madrid, Spain, December 11-13, 2019*'
 publication_short: ''
 
-doi: 10.3233/FAIA190305
+hugoblox:
+  ids:
+    doi: 10.3233/FAIA190305
 
 abstract: ''
 
@@ -46,7 +48,6 @@ tags: [conference]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

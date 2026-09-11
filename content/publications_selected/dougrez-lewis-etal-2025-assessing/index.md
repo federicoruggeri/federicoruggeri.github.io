@@ -32,7 +32,9 @@ publication_types:
 publication: '*Findings of the Association for Computational Linguistics: ACL 2025*'
 publication_short: ''
 
-doi: 10.18653/v1/2025.findings-acl.1059
+hugoblox:
+  ids:
+    doi: 10.18653/v1/2025.findings-acl.1059
 
 abstract: Although LLMs have shown great performance on Mathematics and Coding related
   reasoning tasks, the reasoning capabilities of LLMs regarding other forms of reasoning
@@ -58,7 +60,6 @@ tags: [selected]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

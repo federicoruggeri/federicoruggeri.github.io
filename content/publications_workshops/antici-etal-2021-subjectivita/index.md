@@ -33,7 +33,9 @@ publication: '*Experimental IR Meets Multilinguality, Multimodality, and Interac
   September 21-24, 2021, Proceedings*'
 publication_short: ''
 
-doi: 10.1007/978-3-030-85251-1_4
+hugoblox:
+  ids:
+    doi: 10.1007/978-3-030-85251-1_4
 
 abstract: ''
 
@@ -46,7 +48,6 @@ tags: [workshop]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

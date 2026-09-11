@@ -32,7 +32,6 @@ publication: '*Proceedings of the 2024 Conference on Empirical Methods in Natura
   Language Processing*'
 publication_short: ''
 
-doi: ''
 
 abstract: We propose misogyny detection as an Argumentative Reasoning task and we
   investigate the capacity of large language models (LLMs) to understand the implicit
@@ -55,7 +54,6 @@ tags: [selected]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

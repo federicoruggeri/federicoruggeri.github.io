@@ -33,7 +33,6 @@ publication: '*Proceedings of the Natural Legal Language Processing Workshop 202
   & Data Mining (KDD 2020), Virtual Workshop, August 24, 2020*'
 publication_short: ''
 
-doi: ''
 
 abstract: ''
 
@@ -46,7 +45,9 @@ tags: [workshop]
 featured: false
 
 # Links
-url_pdf: http://ceur-ws.org/Vol-2645/short4.pdf
+links:
+  - type: pdf
+    url: http://ceur-ws.org/Vol-2645/short4.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''

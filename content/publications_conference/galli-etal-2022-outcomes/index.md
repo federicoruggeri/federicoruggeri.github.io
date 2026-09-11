@@ -35,7 +35,9 @@ publication: '*Legal Knowledge and Information Systems - JURIX 2022: The Thirty-
   Annual Conference, Saarbrücken, Germany, 14-16 December 2022*'
 publication_short: ''
 
-doi: 10.3233/FAIA220465
+hugoblox:
+  ids:
+    doi: 10.3233/FAIA220465
 
 abstract: ''
 
@@ -48,7 +50,6 @@ tags: [conference]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

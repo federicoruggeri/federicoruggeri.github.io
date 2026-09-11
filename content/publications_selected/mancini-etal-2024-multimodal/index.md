@@ -29,7 +29,6 @@ publication: '*Proceedings of the 18th Conference of the European Chapter of the
   for Computational Linguistics (Volume 2: Short Papers)*'
 publication_short: ''
 
-doi: ''
 
 abstract: Recent advances in NLP suggest that some tasks, such as argument detection
   and relation classification, are better framed in a multimodal perspective. We propose
@@ -49,7 +48,6 @@ tags: [selected]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

@@ -28,7 +28,6 @@ publication_types:
 publication: '*ArXiv*'
 publication_short: ''
 
-doi: ''
 
 abstract: "Many NLP applications require interpretable models, but successful neural architectures such as transformers still lack effective interpretation methods. We extend transformer models with external memories that store natural-language explanations and use them to explain classification outputs. Experiments in legal text analysis and argument mining show that the approach produces relevant explanations while retaining or improving classification performance."
 
@@ -41,7 +40,6 @@ tags: [preprint]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

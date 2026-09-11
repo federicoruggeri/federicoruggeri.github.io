@@ -32,7 +32,9 @@ publication: '*Integration of Constraint Programming, Artificial Intelligence, a
   USA, June 20-23, 2022, Proceedings*'
 publication_short: ''
 
-doi: 10.1007/978-3-031-08011-1_24
+hugoblox:
+  ids:
+    doi: 10.1007/978-3-031-08011-1_24
 
 abstract: ''
 
@@ -45,7 +47,6 @@ tags: [conference]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

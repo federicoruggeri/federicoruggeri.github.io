@@ -30,7 +30,6 @@ publication_types:
 publication: '*Findings of the Association for Computational Linguistics: NAACL 2025*'
 publication_short: ''
 
-doi: ''
 
 abstract: 'Hate speech relies heavily on cultural influences, leading to varying individual
   interpretations. For that reason, we propose a Semantic Componential Analysis (SCA)
@@ -55,7 +54,6 @@ tags: [selected]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

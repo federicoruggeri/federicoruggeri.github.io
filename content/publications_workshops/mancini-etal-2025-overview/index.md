@@ -30,7 +30,9 @@ publication_types:
 publication: '*Proceedings of the 12th Argument mining Workshop*'
 publication_short: ''
 
-doi: 10.18653/v1/2025.argmining-1.35
+hugoblox:
+  ids:
+    doi: 10.18653/v1/2025.argmining-1.35
 
 abstract: 'We present an overview of the MM-ArgFallacy2025 shared task on Multimodal
   Argumentative Fallacy Detection and Classification in Political Debates, co-located
@@ -61,7 +63,6 @@ tags: [workshop]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

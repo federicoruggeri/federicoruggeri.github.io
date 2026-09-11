@@ -33,7 +33,6 @@ publication: '*Proceedings of the Fourth Workshop on Financial Technology and Na
   Language Processing (FinNLP)*'
 publication_short: ''
 
-doi: ''
 
 abstract: Cryptocurrencies have gained enormous momentum in finance and are nowadays
   commonly adopted as a medium of exchange for online payments. After recent events
@@ -61,7 +60,6 @@ tags: [workshop]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

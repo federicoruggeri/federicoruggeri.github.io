@@ -33,7 +33,9 @@ publication: '*Experimental IR Meets Multilinguality, Multimodality, and Interac
   Greece, September 18-21, 2023, Proceedings*'
 publication_short: ''
 
-doi: 10.1007/978-3-031-42448-9_1
+hugoblox:
+  ids:
+    doi: 10.1007/978-3-031-42448-9_1
 
 abstract: ''
 
@@ -46,7 +48,6 @@ tags: [workshop]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

@@ -29,7 +29,6 @@ publication_types:
 publication: '*Proceedings of the First LUHME Workshop*'
 publication_short: ''
 
-doi: ''
 
 abstract: 'Natural Language Processing (NLP) can provide tools for analyzing specific
   intricate language phenomena, such as offensiveness in language. In this study,
@@ -56,7 +55,6 @@ tags: [workshop]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

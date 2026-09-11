@@ -35,7 +35,9 @@ publication: '*Proceedings of the Nineteenth International Conference on Artific
   Intelligence and Law*'
 publication_short: ''
 
-doi: 10.1145/3594536.3595174
+hugoblox:
+  ids:
+    doi: 10.1145/3594536.3595174
 
 abstract: Argument structure prediction aims to identify the relations between arguments
   or between parts of arguments. It is a crucial task in legal argument mining, where
@@ -66,7 +68,6 @@ tags:
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

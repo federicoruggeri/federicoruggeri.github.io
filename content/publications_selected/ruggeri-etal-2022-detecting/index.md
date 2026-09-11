@@ -29,7 +29,9 @@ publication_types:
 publication: '*Artif. Intell. Law*'
 publication_short: ''
 
-doi: 10.1007/s10506-021-09288-2
+hugoblox:
+  ids:
+    doi: 10.1007/s10506-021-09288-2
 
 abstract: ''
 
@@ -42,7 +44,6 @@ tags: [selected]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

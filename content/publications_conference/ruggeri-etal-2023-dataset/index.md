@@ -29,7 +29,9 @@ publication: '*Proceedings of the 61st Annual Meeting of the Association for Com
   Linguistics (Volume 1: Long Papers)*'
 publication_short: ''
 
-doi: 10.18653/v1/2023.acl-long.425
+hugoblox:
+  ids:
+    doi: 10.18653/v1/2023.acl-long.425
 
 abstract: With recent advances in question-answering models, various datasets have
   been collected to improve and study the effectiveness of these models on scientific
@@ -59,7 +61,6 @@ tags: [selected]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

@@ -34,7 +34,6 @@ publication: '*Proceedings of Text2Story - Sixth Workshop on Narrative Extractio
   Retrieval (ECIR 2023), Dublin, Ireland, April 2, 2023*'
 publication_short: ''
 
-doi: ''
 
 abstract: ''
 
@@ -47,7 +46,9 @@ tags: [workshop]
 featured: false
 
 # Links
-url_pdf: https://ceur-ws.org/Vol-3370/paper10.pdf
+links:
+  - type: pdf
+    url: https://ceur-ws.org/Vol-3370/paper10.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''

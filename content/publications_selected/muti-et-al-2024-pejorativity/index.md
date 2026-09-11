@@ -36,7 +36,6 @@ publication: '*Proceedings of the 2024 Joint International Conference on Computa
   Linguistics, Language Resources and Evaluation (LREC-COLING 2024)*'
 publication_short: ''
 
-doi: ''
 
 abstract: 'Misogyny is often expressed through figurative language. Some neutral words
   can assume a negative connotation when functioning as pejorative epithets. Disambiguating
@@ -61,7 +60,6 @@ tags: [selected]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

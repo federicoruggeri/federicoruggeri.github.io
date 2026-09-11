@@ -34,7 +34,6 @@ publication: '*Proceedings of the 2024 Joint International Conference on Computa
   Linguistics, Language Resources and Evaluation (LREC-COLING 2024)*'
 publication_short: ''
 
-doi: ''
 
 abstract: We develop novel annotation guidelines for sentence-level subjectivity detection,
   which are not limited to language-specific cues. We use our guidelines to collect
@@ -55,7 +54,6 @@ tags: ["selected"]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

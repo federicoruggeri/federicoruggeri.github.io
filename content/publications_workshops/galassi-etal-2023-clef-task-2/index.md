@@ -43,7 +43,6 @@ publication: '*Working Notes of the Conference and Labs of the Evaluation Forum 
   2023), Thessaloniki, Greece, September 18th to 21st, 2023*'
 publication_short: ''
 
-doi: ''
 
 abstract: ''
 
@@ -56,7 +55,9 @@ tags: [workshop]
 featured: false
 
 # Links
-url_pdf: https://ceur-ws.org/Vol-3497/paper-020.pdf
+links:
+  - type: pdf
+    url: https://ceur-ws.org/Vol-3497/paper-020.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''

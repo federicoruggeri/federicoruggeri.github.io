@@ -31,7 +31,9 @@ publication_types:
 publication: '*Proceedings of the 11th Workshop on Argument Mining (ArgMining 2024)*'
 publication_short: ''
 
-doi: 10.18653/v1/2024.argmining-1.7
+hugoblox:
+  ids:
+    doi: 10.18653/v1/2024.argmining-1.7
 
 abstract: Multimodal Argument Mining (MAM) is a recent area of research aiming to
   extend argument analysis and improve discourse understanding by incorporating multiple
@@ -54,7 +56,6 @@ tags: [workshop]
 featured: false
 
 # Links
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''
