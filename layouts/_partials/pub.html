@@ -1,0 +1,33 @@
+{{- /* Publication card: title linked to the paper, authors with the site owner emphasised, venue, tags, and the DOI,
+       PDF, other links, Abstract, and Cite buttons. `data-tags` and `data-search` feed the filters on /publications/. */ -}}
+{{- $slug := .File.ContentBaseName }}
+{{- $kind := partialCached "pub-kind" . . }}
+{{- $dirs := default slice (index (partialCached "pub-directions" hugo.Data.graph) $slug) }}
+{{- $tags := slice (urlize $kind) | append $dirs }}
+{{- if .Params.featured }}{{ $tags = $tags | append "selected" }}{{ end }}
+{{- $doi := "" }}{{ with .Params.doi }}{{ $doi = printf "https://doi.org/%s" . }}{{ end }}
+{{- $pdf := .Resources.GetMatch "*.pdf" }}
+{{- $url := $doi }}{{ if not $url }}{{ with .Params.links }}{{ $url = (index . 0).url }}{{ end }}{{ end }}
+<li class="pub" id="{{ $slug }}" data-tags="{{ delimit $tags " " }}" data-search="{{ lower (printf "%s %s %s" .Title (delimit (.Params.authors | default slice) " ") (.Params.publication | plainify)) }}">
+  {{ with $url }}<a class="pub-title" href="{{ . }}">{{ $.Title }}</a>{{ else }}<span class="pub-title">{{ .Title }}</span>{{ end }}
+  <span class="pub-authors">
+    {{- range $i, $a := .Params.authors }}{{ if $i }}, {{ end }}{{ if eq $a site.Title }}<b>{{ $a }}</b>{{ else }}{{ $a }}{{ end }}{{ end -}}
+  </span>
+  <span class="pub-venue">{{ .Params.publication | plainify }}, {{ .Date.Year }}{{ with .Params.note }} ({{ . }}){{ end }}</span>
+  <span class="tags">
+    <span>{{ $kind }}</span>
+    {{- range $dirs }}<span>{{ index (partial "graph-labels" hugo.Data.graph) . }}</span>{{ end }}
+    {{- if .Params.featured }}<span>Selected</span>{{ end -}}
+  </span>
+  <div class="chips">
+    {{- with $doi }}<a href="{{ . }}">DOI</a>{{ end }}
+    {{- with $pdf }}<a href="{{ .RelPermalink }}">PDF</a>{{ end }}
+    {{- range .Params.links }}{{ if not (and $doi (strings.Contains .url "doi.org")) }}<a href="{{ .url }}">{{ .name }}</a>{{ end }}{{ end }}
+    {{- with .Params.abstract }}
+    <details class="more"><summary>Abstract</summary><div class="more-body">{{ $.RenderString (dict "display" "block") . }}</div></details>
+    {{- end }}
+    {{- with .Resources.GetMatch "cite.bib" }}
+    <details class="more"><summary>Cite</summary><div class="more-body"><pre class="bib">{{ .Content | strings.TrimSpace }}</pre><button type="button" class="copy" data-copy hidden>Copy BibTeX</button></div></details>
+    {{- end }}
+  </div>
+</li>

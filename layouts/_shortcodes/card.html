@@ -7,11 +7,11 @@
 {{- $thumb := $img.Resize "296x webp q80" -}}
 {{- $retina := $img.Resize "592x webp q80" -}}
 {{- $name := path.BaseName $img.Name -}}
-<a class="not-prose my-6 block text-center" href="{{ $img.RelPermalink }}" target="_blank" rel="noopener" title="{{ $name }}">
+<a class="card" href="{{ $img.RelPermalink }}" target="_blank" rel="noopener" title="{{ $name }}">
   <img src="{{ $thumb.RelPermalink }}"
        srcset="{{ $thumb.RelPermalink }} 1x, {{ $retina.RelPermalink }} 2x"
        width="{{ $thumb.Width }}" height="{{ $thumb.Height }}"
        loading="lazy" decoding="async"
-       class="mx-auto rounded-lg"
+
        alt="Card: {{ $name }}">
 </a>

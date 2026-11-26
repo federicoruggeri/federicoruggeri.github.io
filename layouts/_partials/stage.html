@@ -1,0 +1,61 @@
+{{- /* One view of the research explorer: the parent of a node above it, the node with its content, and its children
+       below. CSS shows the view whose id is the URL fragment, or the vision without a fragment. Nodes carry a
+       `view-transition-name`, so the same node morphs between views (assets/js/site.js).
+       Input: `node`, `kind`, `accent`, optional `parent` and `relation`, `children`, `connects`, and `root`. */ -}}
+{{- $n := .node }}
+<section class="stage{{ if .root }} is-root{{ end }}" id="{{ $n.id }}" aria-label="{{ .kind }}: {{ $n.label }}" style="--accent: {{ .accent | safeCSS }}">
+  {{- with .parent }}
+  <a class="node parent" href="#{{ .id }}" style="--accent: {{ .accent | safeCSS }}; view-transition-name: n-{{ .id }}">
+    <span class="kind">{{ .kind }}</span>{{ .label }}
+  </a>
+  <span class="edge up" aria-hidden="true"><span>{{ $.relation }}</span></span>
+  {{- end }}
+  <article class="node focus" style="view-transition-name: n-{{ $n.id }}">
+    <span class="kind">{{ .kind }}</span>
+    <h3>{{ $n.label }}</h3>
+    <div class="content">
+      <p class="summary">{{ $n.summary }}</p>
+      {{- with $n.flow }}
+      <figure class="flow-figure">
+        <ol class="flow">
+          {{- range .steps }}<li><strong>{{ .label }}</strong>{{ with .note }}<span>{{ . }}</span>{{ end }}</li>{{ end }}
+        </ol>
+        {{- with .caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+      </figure>
+      {{- end }}
+      {{- with $n.points }}
+      <ul class="points">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+      {{- end }}
+      {{- with $.connects }}
+      <p class="connects">{{ range . }}<a href="#{{ .id }}"><span>{{ .rel }}</span> {{ .label }}</a>{{ end }}</p>
+      {{- end }}
+      {{- with $n.links }}
+      <div class="chips">{{ range . }}<a href="{{ .url }}">{{ .name }}</a>{{ end }}</div>
+      {{- end }}
+      {{- with $n.pubs }}
+      {{- $pages := slice }}
+      {{- range . }}
+        {{- with site.GetPage (printf "/publications/%s" .) }}{{ $pages = $pages | append . }}{{ else }}{{ errorf "data/graph.yaml: unknown publication %q" . }}{{ end }}
+      {{- end }}
+      <details class="stage-pubs">
+        <summary>Publications ({{ len $pages }})</summary>
+        <ol class="pubs">{{ range sort $pages "Date" "desc" }}{{ partial "pub" . }}{{ end }}</ol>
+      </details>
+      {{- end }}
+    </div>
+  </article>
+  {{- with .children }}
+  <ol class="children" style="--n: {{ len . }}">
+    {{- range $i, $c := . }}
+    <li style="--accent: {{ .accent | safeCSS }}; --i: {{ $i }}">
+      <span class="edge down{{ if .future }} is-future{{ end }}" aria-hidden="true">{{ with .relation }}<span>{{ . }}</span>{{ end }}</span>
+      <a class="node child{{ if .future }} is-future{{ end }}" href="#{{ .id }}" style="view-transition-name: n-{{ .id }}">
+        <span class="kind">{{ .kind }}</span>
+        <strong>{{ .label }}</strong>
+        <span class="caption">{{ .summary }}</span>
+      </a>
+    </li>
+    {{- end }}
+  </ol>
+  {{- end }}
+</section>

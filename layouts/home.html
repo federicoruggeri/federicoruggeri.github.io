@@ -1,0 +1,72 @@
+{{ define "main" }}
+{{- $g := hugo.Data.graph }}
+{{- $labels := partial "graph-labels" $g }}
+<section class="hero">
+  {{- with resources.Get "media/authors/me.jpg" }}
+  {{- $img := .Fill "240x240 webp q85 Center" }}
+  <img class="avatar" src="{{ $img.RelPermalink }}" width="120" height="120" alt="Portrait of {{ site.Title }}">
+  {{- end }}
+  <div>
+    <h1>{{ site.Title }}</h1>
+    <p class="role">{{ site.Params.role }}, <a href="{{ site.Params.affiliationURL }}">{{ site.Params.affiliation }}</a></p>
+    <p class="links">
+      {{- range site.Params.links }}<a class="icon-link" href="{{ .url }}" aria-label="{{ .name }}" title="{{ .name }}">{{ partial "icon" .icon }}</a>{{ end -}}
+      <a href="/cv/cv.pdf">CV</a><a href="/research/statement/statement.pdf">Research statement</a>
+    </p>
+  </div>
+</section>
+
+<section class="research" aria-labelledby="research-title">
+  <h2 id="research-title">Research</h2>
+  <div class="explorer" data-explorer>
+    <div class="stages">
+      {{- $c := $g.claim }}
+      {{- $claimRef := dict "id" $c.id "label" $c.label "kind" "Vision" "accent" "var(--ink)" }}
+      {{- $kids := slice }}
+      {{- range $i, $d := $g.directions }}{{ $kids = $kids | append (dict "id" $d.id "label" $d.label "kind" "Direction" "summary" $d.summary "relation" $d.relation "accent" (printf "var(--c%d)" (add $i 1))) }}{{ end }}
+      {{- partial "stage" (dict "node" $c "kind" "Vision" "accent" "var(--ink)" "children" $kids "root" true) }}
+      {{- range $i, $d := $g.directions }}
+        {{- $accent := printf "var(--c%d)" (add $i 1) }}
+        {{- $dirRef := dict "id" $d.id "label" $d.label "kind" "Direction" "accent" $accent }}
+        {{- $kids = slice }}
+        {{- range $d.themes }}{{ $kids = $kids | append (dict "id" .id "label" .label "kind" "Theme" "summary" .summary "accent" $accent) }}{{ end }}
+        {{- $f := $d.future }}
+        {{- $kids = $kids | append (dict "id" $f.id "label" $f.label "kind" "Current focus" "summary" $f.summary "accent" $accent "future" true) }}
+        {{- partial "stage" (dict "node" $d "kind" "Direction" "accent" $accent "parent" $claimRef "relation" $d.relation "children" $kids) }}
+        {{- range $d.themes }}
+          {{- partial "stage" (dict "node" . "kind" "Theme" "accent" $accent "parent" $dirRef "relation" "supports") }}
+        {{- end }}
+        {{- $connects := slice }}
+        {{- range where $g.links "from" $f.id }}{{ $connects = $connects | append (dict "id" .to "label" (index $labels .to) "rel" .label) }}{{ end }}
+        {{- range where $g.links "to" $f.id }}{{ $connects = $connects | append (dict "id" .from "label" (index $labels .from) "rel" .label) }}{{ end }}
+        {{- partial "stage" (dict "node" $f "kind" "Current focus" "accent" $accent "parent" $dirRef "relation" "current focus" "connects" $connects) }}
+      {{- end }}
+    </div>
+    <nav class="minimap" aria-label="Map of the research">
+      <p class="kind">Map</p>
+      <ul>
+        <li><a href="#{{ $c.id }}" data-map="{{ $c.id }}">Vision</a>
+          <ul>
+            {{- range $i, $d := $g.directions }}
+            <li style="--accent: var(--c{{ add $i 1 }})"><a href="#{{ $d.id }}" data-map="{{ $d.id }}" data-up="{{ $c.id }}">{{ $d.label }}</a>
+              <ul>
+                {{- range $d.themes }}<li><a href="#{{ .id }}" data-map="{{ .id }}" data-up="{{ $d.id }}">{{ .label }}</a></li>{{ end }}
+                <li class="is-future"><a href="#{{ $d.future.id }}" data-map="{{ $d.future.id }}" data-up="{{ $d.id }}">{{ $d.future.label }}</a></li>
+              </ul>
+            </li>
+            {{- end }}
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+{{- with first 3 (where site.RegularPages "Section" "news").ByDate.Reverse }}
+<section class="news" aria-labelledby="news-title">
+  <h2 id="news-title">News</h2>
+  <ol class="line">{{ range . }}{{ partial "news-item" . }}{{ end }}</ol>
+  <p><a href="/news/">All news</a></p>
+</section>
+{{- end }}
+{{ end }}

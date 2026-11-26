@@ -1,0 +1,7 @@
+{{- /* Map from node id to label for every node of data/graph.yaml. */ -}}
+{{- $m := dict .claim.id .claim.label }}
+{{- range .directions }}
+  {{- $m = merge $m (dict .id .label .future.id .future.label) }}
+  {{- range .themes }}{{ $m = merge $m (dict .id .label) }}{{ end }}
+{{- end }}
+{{- return $m }}

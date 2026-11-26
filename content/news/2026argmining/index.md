@@ -1,14 +1,9 @@
 ---
-title: "The 13th Workshop on Argument Mining and Reasoning Co-located with ACL 2026" 
+title: The 13th Workshop on Argument Mining and Reasoning
 date: 2025-10-01
-tags: 
-  - news
-  - workshop
-  - argument mining
-  - reasoning
-
-summary: "I'm co-organizing the 13th Workshop on Argument Mining and Reasoning (ArgMining 2026)"
-
-type: redirect
-target: https://nlp.unibo.it/news/argmining2026/
+kind: workshop
+venue: Co-located with ACL 2026, San Diego
+summary: I co-organize ArgMining 2026. This edition places a special focus on understanding and evaluating arguments in both human and machine reasoning.
+links:
+  - {name: Workshop page, url: 'https://argmining-org.github.io/2026/'}
 ---

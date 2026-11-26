@@ -1,13 +1,7 @@
 ---
-title: "Paper accepted at ICAIL!" 
+title: Evaluating LLMs as a Judge for Legal CJEU Decision Summarization
 date: 2026-04-20
-tags: 
-  - news
-  - ICAIL
-  - accepted
- 
-summary: "The paper entitled ‘Evaluating LLMs as a Judge for Legal CJEU Decision Summarization’ has been accepted to International Conference on Artificial Intelligence and Law (ICAIL)!"
-
-type: redirect
-target: https://nlp.unibo.it/news/icail2026/
+kind: paper
+venue: International Conference on Artificial Intelligence and Law (ICAIL 2026)
+summary: As judges of summaries of CJEU decisions, LLMs show a moderate agreement with legal experts. They align more closely on substantive criteria than on formal ones.
 ---

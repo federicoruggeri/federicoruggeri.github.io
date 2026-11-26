@@ -1,98 +1,90 @@
-# Federico Ruggeri — personal academic website
+# Federico Ruggeri, academic website
 
-Source for [federicoruggeri.github.io](https://federicoruggeri.github.io), built with [Hugo](https://gohugo.io/) and [HugoBlox](https://hugoblox.com/).
+Source of [federicoruggeri.github.io](https://federicoruggeri.github.io), built with plain [Hugo](https://gohugo.io/) and no theme.
+
+The homepage presents the research statement as an argument graph.
+A central vision is supported by three research directions, and each direction is supported by its themes and a current focus.
+The graph is explored one node at a time: the node shows its content, with its parent above it and its children below it.
+A minimap beside the graph shows the whole structure and jumps to any node.
 
 ## Production
 
-- Source branch: `academic-template`
-- Host: GitHub Pages
-- Deployment workflow: `.github/workflows/hugo.yml`
-- Production URL: <https://federicoruggeri.github.io>
-
-Pushing to `academic-template` starts the GitHub Pages deployment. Review and validate changes before pushing.
+The source branch is `academic-template`, and the site is hosted on GitHub Pages.
+Pushing to `academic-template` runs `.github/workflows/hugo.yml`.
+That workflow builds and deploys the site.
+Pull requests run `.github/workflows/ci.yml`.
+That workflow builds the site, fails on any Hugo warning, and checks internal links.
 
 ## Local development
 
-Prerequisites:
-
-- Hugo Extended `0.156.0` (the version declared in `hugoblox.yaml`)
-- Node.js `22`
-- pnpm `10.14.0` (the version declared in `package.json`, installed with `corepack`)
-- Go, for Hugo modules
+The only requirement is Hugo Extended 0.167.0, the version pinned in `.github/actions/setup-site/action.yml`.
+Start a preview at <http://localhost:1313> with this command:
 
 ```bash
-corepack enable
-pnpm install
-pnpm run dev
+hugo server
 ```
 
-The development server is normally available at <http://localhost:1313>.
-
-Build the production site and Pagefind index with:
+Run the same checks as CI before opening a pull request:
 
 ```bash
-pnpm run build
-```
-
-Generated output is written to `public/` and must not be edited manually.
-
-Pull requests run `.github/workflows/ci.yml`, which builds the site with the same pinned toolchain and checks internal links with `scripts/check_internal_links.py`. Run the same check locally with:
-
-```bash
+hugo --minify --printPathWarnings --panicOnWarning
 python3 scripts/check_internal_links.py public
 ```
+
+The build writes the site to `public/`, which must not be edited by hand.
 
 ## Content map
 
 | Area | Location |
-|---|---|
-| Homepage | `content/_index.md` |
-| Profile, education, experience | `data/authors/me.yaml` |
-| Research | `content/research/` |
-| Publications | `content/publications*/` |
-| Teaching | `content/teaching/` |
+| --- | --- |
+| Argument graph on the homepage | `data/graph.yaml` |
+| Name, role, and profile links | `config/_default/hugo.yaml` |
+| Portrait and tab icon | `assets/media/authors/me.jpg`, `static/favicon.svg` |
+| Icons | `assets/icons/` |
+| Publications | `content/publications/<bundle>/index.md` |
+| CV page | `data/cv.yaml` |
+| Full CV and research statement | `static/cv/cv.pdf`, `static/research/statement/statement.pdf` |
+| Teaching timeline | `years` in `content/teaching/_index.md` |
 | News | `content/news/` |
-| Tools and shared tasks | `content/tools/`, `content/sharedtasks/` |
-| Personal projects and modding | `content/modding/` |
-| Navigation | `config/_default/menus.yaml` |
-| Site settings and metadata | `config/_default/params.yaml` |
-| Static files such as the CV | `static/` |
+| Personal projects | `content/modding/` |
+| Templates and styles | see `CODEBASE-SCHEMA.md` |
 
 ## Common updates
 
-### CV
+### Argument graph
 
-Replace `static/cv/cv.pdf` while keeping the path unchanged, then verify:
+Each node in `data/graph.yaml` has an `id`, a `label`, and a `text`.
+The `id` is also the URL fragment of the node.
 
-- <https://federicoruggeri.github.io/cv/cv.pdf>
-
-### Research statement
-
-Update both the page and its PDF under `content/research/statement/`. The homepage links directly to:
-
-- `/research/statement/statement.pdf`
+A node view shows `summary`, the `flow` figure, `points`, `pubs`, and `links`.
+A `flow` lists `steps`, each with a `label` and an optional `note`, and takes an optional `caption`.
+Themes list the publication bundles they cite in `pubs`.
+The build fails when `pubs` names a bundle that does not exist.
+The `links` list connects open questions across directions.
 
 ### Publications
 
-Publication records are Hugo leaf bundles. Keep each record in its own `index.md` and verify titles, authors, dates, publication type, and external links before publishing.
+Each publication is a leaf bundle under `content/publications/`.
+Its front matter holds `title`, `authors`, `date`, `publication`, `publication_types`, and `featured`.
+The optional keys are `doi`, `links`, `abstract`, and `note`.
+Publications have no page of their own, and each one appears as a card on `/publications/`.
+
+Set `featured: true` to include the paper in the Selected filter.
+A `cite.bib` file adds the Cite button, and a PDF in the bundle adds a PDF button.
+Old publication URLs lead to `/publications/` through the `aliases` of `content/publications/_index.md`.
+
+### News
+
+Each news item is a bundle under `content/news/` without a page of its own.
+Its front matter holds `title`, `date`, `kind`, `venue`, `summary`, and `links`.
+The `kind` is `paper`, `workshop`, or `talk`, and it sets the pill and its icon.
+An optional `pub` names a publication bundle and adds a link to its page.
+The homepage shows the three latest items.
 
 ### Draft content
 
-Set the following in front matter to keep unfinished content out of production:
-
-```yaml
-draft: true
-```
-
-## Pre-deployment checklist
-
-1. Confirm `git status` contains only intended changes.
-2. Run `pnpm run build` with the pinned local toolchain.
-3. Review Hugo warnings and run `python3 scripts/check_internal_links.py public`.
-4. Check the homepage, navigation, publication pages, CV, and research-statement links.
-5. Test keyboard navigation and representative mobile layouts.
-6. Push only after the production build passes.
+Set `draft: true` in the front matter to keep a page out of production.
 
 ## License
 
-Website content uses the Creative Commons settings declared in `config/_default/params.yaml`. HugoBlox and other dependencies retain their own licenses.
+See `LICENSE.md`. The content is licensed under CC BY-NC-ND 4.0, and text and data mining is reserved.

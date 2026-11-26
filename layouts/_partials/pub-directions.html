@@ -1,0 +1,8 @@
+{{- /* Map from publication bundle name to the ids of the graph directions that cite it. */ -}}
+{{- $m := dict }}
+{{- range $d := .directions }}
+  {{- range .themes }}
+    {{- range .pubs }}{{ $m = merge $m (dict . (union (default slice (index $m .)) (slice $d.id))) }}{{ end }}
+  {{- end }}
+{{- end }}
+{{- return $m }}

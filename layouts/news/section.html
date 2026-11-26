@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article class="line-page">
+  <h1>{{ .Title }}</h1>
+  {{- range .RegularPages.GroupByDate "2006" }}
+  <section aria-labelledby="y{{ .Key }}">
+    <h2 class="year-title" id="y{{ .Key }}">{{ .Key }}</h2>
+    <ol class="line">{{ range .Pages }}{{ partial "news-item" . }}{{ end }}</ol>
+  </section>
+  {{- end }}
+</article>
+{{ end }}

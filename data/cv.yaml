@@ -1,0 +1,64 @@
+# Curriculum vitae entries rendered on /cv/. Source: the full CV in static/cv/cv.pdf.
+# Each section is a list of entries with `when`, `what`, optional `where`, `note`, and `url`.
+
+sections:
+  - title: Positions
+    entries:
+      - {when: 2025 – now, what: Postdoctoral Research Fellow, where: University of Bologna, note: 'POLINE project: transparent extraction of judicial principles of law from legal documents.', url: 'https://site.unibo.it/poline/en'}
+      - {when: 2024 – 2025, what: Postdoctoral Research Fellow, where: 'Centro Interdipartimentale di Ricerca Industriale ICT, University of Bologna', note: 'BI-REX GeMEB and SmartCasm projects: LLM-based solutions for industrial use cases.', url: 'https://bi-rex.it/quarto-bando-bi-rex/'}
+      - {when: 2022 – 2024, what: Postdoctoral Research Fellow, where: University of Bologna, note: 'AI4EU project: matchmaking of AI resources for AI-on-demand services.', url: 'https://cordis.europa.eu/project/id/825619'}
+      - {when: 2021 – 2022, what: Postdoctoral Research Fellow, where: University of Bologna, note: 'StairwAI project: large-scale matching of heterogeneous documents.', url: 'https://cordis.europa.eu/project/id/101017142'}
+      - {when: 2021, what: External Research Collaborator, where: University of Modena and Reggio Emilia, note: 'AMICA project: ranking of biomedical literature with Argument Mining features.', url: 'http://amica.unimore.it/'}
+      - {when: 2018, what: Research Scholarship, where: 'University of Bologna, with Magneti Marelli', note: Anomaly detection with forecasting neural networks.}
+
+  - title: Education
+    entries:
+      - {when: 2022, what: PhD in Computer Science and Engineering, where: University of Bologna, note: 'Thesis: Towards Unstructured Knowledge Integration in Natural Language Processing. Evaluation: 5/5, Excellence.'}
+      - {when: 2018, what: Master degree in Computer Engineering, where: University of Bologna, note: '110/110 summa cum laude. Thesis: Argument structure prediction with stance classification features.'}
+      - {when: 2015, what: Bachelor degree in Computer Engineering, where: University of Bologna}
+
+  - title: Research visits
+    entries:
+      - {when: 2024, what: Visiting Researcher, where: 'Alan Turing Institute, London', note: Rumour verification and reasoning in LLMs.}
+      - {when: 2021, what: Research Intern, where: 'UKP Lab, TU Darmstadt', note: Argumentative dialogue agents on scientific literature.}
+      - {when: 2019, what: Short-Term Scientific Mission, where: 'Open University, Milton Keynes', note: Computer-supported reflection and deliberation systems.}
+
+  - title: Projects
+    entries:
+      - {when: 2025 – now, what: POLINE, where: Principles Of Law In National and European VAT, url: 'https://site.unibo.it/poline/en'}
+      - {when: 2024 – 2025, what: FAIR, where: Future Artificial Intelligence Research, url: 'https://fondazione-fair.it/'}
+      - {when: 2024 – 2025, what: BI-REX GeMEB and SmartCasm, where: LLM-based solutions for industrial use cases, url: 'https://bi-rex.it/quarto-bando-bi-rex/'}
+      - {when: 2022 – 2024, what: AI4EU, where: A European AI On Demand Platform and Ecosystem, url: 'https://cordis.europa.eu/project/id/825619'}
+      - {when: 2021 – 2023, what: StairwAI, where: Ease the Engagement of Low-Tech users to the AI-on-Demand platform through AI, url: 'https://cordis.europa.eu/project/id/101017142'}
+      - {when: 2021 – 2023, what: ADELE, where: Analytics for DEcision of LEgal cases, url: 'https://site.unibo.it/adele/en'}
+      - {when: 2022, what: LAILA, where: Legal Analytics for Italian Law}
+      - {when: 2021, what: AMICA, where: Argument Mining In Covid-19 Articles, url: 'http://amica.unimore.it/'}
+      - {when: 2019 – 2022, what: CLAUDETTE, where: automated CLAUse DETectEr, url: 'http://claudette.eui.eu/'}
+
+  - title: Service
+    entries:
+      - {when: 2026, what: Lead Guest Editor, where: 'Special issue on Legal Argument Mining, Artificial Intelligence and Law', url: 'https://link.springer.com/collections/jdcfbbcfce'}
+      - {when: 2026, what: Associate Editor, where: Intelligenza Artificiale, url: 'https://journals.sagepub.com/editorial-board/INA'}
+      - {when: 2026, what: Co-organizer, where: '13th Workshop on Argument Mining and Reasoning, ACL 2026', url: 'https://argmining-org.github.io/2026/'}
+      - {when: 2025, what: Shared task organizer, where: 'MM-ArgFallacy2025, ArgMining 2025 at ACL 2025', url: 'https://nlp.unibo.it/events/2025argfallacy/'}
+      - {when: 2023 – 2025, what: Co-chair, where: CheckThat! Lab at CLEF, url: 'https://checkthat.gitlab.io/clef2025/'}
+      - {when: 2022, what: Local organizer, where: 'CLEF 2022, Bologna'}
+      - {when: 2025 – 2026, what: Area Chair, where: ACL Rolling Review}
+      - {when: 2024 – 2025, what: Senior Program Committee member, where: ECAI}
+      - {when: 2022 – 2026, what: Program Committee member, where: 'ACL, NAACL, EMNLP, EACL, AAAI, IJCAI, COLING, LREC, and the Workshop on Argument Mining, among others'}
+
+  - title: Awards
+    entries:
+      - {when: 2026, what: Outstanding Area Chair, where: ACL 2026}
+      - {when: 2024, what: Outstanding Reviewer, where: EMNLP 2024}
+
+  - title: Funding
+    entries:
+      - {when: 2024, what: Trustworthy Artificial Intelligence Short Stay grant, where: Future Artificial Intelligence Research Foundation, note: 2.5k euros for a two-week visiting period.}
+
+  - title: Software
+    entries:
+      - {when: 2026, what: pyhighlights, where: Highlight-based explainable AI research, url: 'https://github.com/nlp-unibo/pyhighlights'}
+      - {when: 2026, what: nlp.unibo.it, where: Website of the Language Technologies Lab, url: 'https://github.com/nlp-unibo/nlp-unibo.github.io'}
+      - {when: 2024, what: cinnamon, where: Configuration and code logic decoupling, url: 'https://github.com/nlp-unibo/cinnamon'}
+      - {when: 2024, what: MAMKit, where: Multimodal Argument Mining toolkit, url: 'https://github.com/nlp-unibo/mamkit'}
