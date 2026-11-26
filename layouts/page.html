@@ -1,0 +1,7 @@
+{{ define "main" }}
+<article class="prose">
+  {{ with .Parent }}{{ if not .IsHome }}<p class="kind"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}{{ end }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+</article>
+{{ end }}

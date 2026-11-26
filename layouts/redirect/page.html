@@ -1,0 +1,8 @@
+{{ define "main" }}
+{{- $host := (urls.Parse .Params.target).Host }}
+<article class="prose">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.summary }}<p>{{ . | markdownify }}</p>{{ end }}
+  <p><a href="{{ .Params.target }}">Continue to {{ $host }}</a></p>
+</article>
+{{ end }}

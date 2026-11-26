@@ -1,0 +1,12 @@
+{{- /* One news item: kind pill and date, title, venue, summary, and link chips. */ -}}
+{{- $kinds := dict "paper" "Paper" "workshop" "Workshop" "talk" "Talk" }}
+{{- $kind := .Params.kind | default "workshop" }}
+<li class="line-item is-{{ $kind }}">
+  <p class="meta"><span class="pill">{{ partial "icon" $kind }} {{ index $kinds $kind }}</span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time></p>
+  <h3>{{ .Title }}</h3>
+  {{- with .Params.venue }}<p class="venue">{{ . }}</p>{{ end }}
+  {{- with .Params.summary }}<p class="news-text">{{ . }}</p>{{ end }}
+  <p class="chips">
+    {{- range .Params.links }}<a href="{{ .url }}">{{ .name }}</a>{{ end -}}
+  </p>
+</li>

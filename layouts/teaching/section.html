@@ -1,0 +1,21 @@
+{{ define "main" }}
+{{- $roles := dict "lecturer" "Lecturer" "assistant" "Teaching assistant" }}
+<article class="line-page">
+  <h1>{{ .Title }}</h1>
+  <p>All courses are at the University of Bologna.</p>
+  {{- range .Params.years }}
+  <section aria-labelledby="y{{ urlize .year }}">
+    <h2 class="year-title" id="y{{ urlize .year }}">{{ .year }}</h2>
+    <ol class="line">
+      {{- range .courses }}
+      <li class="line-item is-{{ .role }}">
+        <p class="meta"><span class="pill">{{ partial "icon" (cond (eq .role "lecturer") "talk" "workshop") }} {{ index $roles .role }}</span>{{ if .scheduled }}<span>Scheduled</span>{{ end }}</p>
+        <h3>{{ with .url }}<a href="{{ . }}">{{ end }}{{ .what }}{{ if .url }}</a>{{ end }}</h3>
+        <p class="venue">{{ .where }}</p>
+      </li>
+      {{- end }}
+    </ol>
+  </section>
+  {{- end }}
+</article>
+{{ end }}

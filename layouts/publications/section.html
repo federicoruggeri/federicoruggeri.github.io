@@ -1,0 +1,27 @@
+{{ define "main" }}
+{{- $pubs := .RegularPages.ByDate.Reverse }}
+{{- $kinds := slice }}
+{{- range $pubs }}{{ $k := partialCached "pub-kind" . . }}{{ if not (in $kinds $k) }}{{ $kinds = $kinds | append $k }}{{ end }}{{ end }}
+<article class="pub-list" data-pubs>
+  <h1>{{ .Title }}</h1>
+  <div class="pub-controls" hidden>
+    <input type="search" placeholder="Search titles, authors, and venues" aria-label="Search titles, authors, and venues">
+    <div class="filter" role="group" aria-label="Show publications by type" data-filter-group>
+      <button type="button" aria-pressed="true" data-filter="">All types</button>
+      {{- range sort $kinds }}<button type="button" aria-pressed="false" data-filter="{{ urlize . }}">{{ . }}</button>{{ end }}
+    </div>
+    <div class="filter" role="group" aria-label="Show publications by topic" data-filter-group>
+      <button type="button" aria-pressed="true" data-filter="">All topics</button>
+      <button type="button" aria-pressed="false" data-filter="selected">Selected</button>
+      {{- range hugo.Data.graph.directions }}<button type="button" aria-pressed="false" data-filter="{{ .id }}">{{ .label }}</button>{{ end }}
+    </div>
+    <p class="count" aria-live="polite" data-count></p>
+  </div>
+  {{- range $pubs.GroupByDate "2006" }}
+  <section class="year" aria-labelledby="y{{ .Key }}">
+    <h2 id="y{{ .Key }}">{{ .Key }}</h2>
+    <ol class="pubs">{{ range .Pages }}{{ partial "pub" . }}{{ end }}</ol>
+  </section>
+  {{- end }}
+</article>
+{{ end }}

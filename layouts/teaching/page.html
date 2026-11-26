@@ -1,0 +1,50 @@
+{{ define "main" }}
+{{- /* Course page: facts and prerequisites, the introduction, then one numbered card per part with its lecture
+       recordings and a collapsible reading list. Reads `facts`, `prerequisites`, `parts`, `history`, `repository`. */ -}}
+<article class="course">
+  <p class="kind"><a href="/teaching/">Teaching</a></p>
+  <h1>{{ .Title }}</h1>
+  {{ with .Summary }}<p class="summary">{{ . }}</p>{{ end }}
+  <div class="course-facts">
+    {{- range .Params.facts }}<div><span class="kind">{{ .label }}</span>{{ .value }}</div>{{ end }}
+    {{- with .Params.prerequisites }}
+    <div><span class="kind">Prerequisites</span>{{ range $i, $p := . }}{{ if $i }} · {{ end }}{{ .topic }} <em>({{ lower .level }})</em>{{ end }}</div>
+    {{- end }}
+  </div>
+  {{ with .Params.repository }}<p class="chips"><a href="{{ . }}">Course repository: slides, recordings, and material</a></p>{{ end }}
+  <div class="prose">{{ .Content }}</div>
+
+  <h2>Programme</h2>
+  <ol class="parts">
+    {{- range $i, $p := .Params.parts }}
+    <li class="part">
+      <span class="part-number" aria-hidden="true">{{ add $i 1 }}</span>
+      <div>
+        <h3><span class="visually-hidden">Part {{ add $i 1 }}: </span>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+        {{- with .points }}
+        <ul class="points">{{ range . }}<li><strong>{{ .name }}:</strong> {{ .text }}</li>{{ end }}</ul>
+        {{- end }}
+        <div class="chips">
+          {{- range .lectures }}<a href="{{ .url }}" title="{{ .title }}">▶ {{ .name }}{{ with .title }}: {{ . }}{{ end }}</a>{{ end }}
+          {{- with .readings }}
+          <details class="more"><summary>Readings ({{ len . }})</summary>
+            <ul class="more-body readings">
+              {{- range . }}<li><a href="{{ .url }}">{{ .title }}</a>{{ with .cite }} <span>{{ . }}</span>{{ end }}</li>{{ end }}
+            </ul>
+          </details>
+          {{- end }}
+        </div>
+      </div>
+    </li>
+    {{- end }}
+  </ol>
+
+  {{- with .Params.history }}
+  <h2>Editions</h2>
+  <ol class="timeline">
+    {{- range . }}<li><span class="when">{{ .year }}</span><span class="what">{{ .title }}{{ with .note }}<span class="where">, {{ . }}</span>{{ end }}</span></li>{{ end }}
+  </ol>
+  {{- end }}
+</article>
+{{ end }}

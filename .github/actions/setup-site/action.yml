@@ -1,5 +1,5 @@
 name: Set up site toolchain
-description: Install the pinned Hugo, Node.js, and pnpm used to build the site.
+description: Install the pinned Hugo release used to build the site.
 
 runs:
   using: composite
@@ -7,27 +7,12 @@ runs:
     - name: Install Hugo
       shell: bash
       env:
-        # Checksum of hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz.
-        # Update together with `build.hugo_version` in hugoblox.yaml.
-        HUGO_SHA256: 88e28cdec01f4bb17bfc8173e6cbe9dc1df6fadb3874c6a659a9c1b860431e4c
+        # Update the version and the checksum of hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz together.
+        HUGO_VERSION: 0.167.0
+        HUGO_SHA256: 0163f5c3deddac1f494a1629ddc40c65d18de9d5794facd98f7f96ac2c7d8957
       run: |
-        HUGO_VERSION=$(sed -n 's/^ *hugo_version: *.\(.*\).$/\1/p' hugoblox.yaml)
-        echo "Hugo ${HUGO_VERSION}"
         curl -sSL -o hugo.tar.gz \
           "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
         echo "${HUGO_SHA256}  hugo.tar.gz" | sha256sum --check --strict
         sudo tar -xzf hugo.tar.gz -C /usr/local/bin hugo
         rm hugo.tar.gz
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v7
-      with:
-        node-version: '22'
-
-    - name: Install pnpm
-      shell: bash
-      run: corepack enable && corepack install
-
-    - name: Install dependencies
-      shell: bash
-      run: pnpm install --frozen-lockfile

@@ -1,0 +1,20 @@
+{{ define "main" }}
+<article class="cv">
+  <h1>{{ .Title }}</h1>
+  <p class="chips"><a href="/cv/cv.pdf" download>Download CV</a></p>
+  {{- range hugo.Data.cv.sections }}
+  <section aria-labelledby="{{ urlize .title }}">
+    <h2 id="{{ urlize .title }}">{{ .title }}</h2>
+    <ol class="timeline">
+      {{- range .entries }}
+      <li>
+        <span class="when">{{ .when }}</span>
+        <span class="what">{{ with .url }}<a href="{{ . }}">{{ end }}{{ .what }}{{ if .url }}</a>{{ end }}{{ with .where }}<span class="where">, {{ . }}</span>{{ end }}</span>
+        {{- with .note }}<span class="note">{{ . }}</span>{{ end }}
+      </li>
+      {{- end }}
+    </ol>
+  </section>
+  {{- end }}
+</article>
+{{ end }}

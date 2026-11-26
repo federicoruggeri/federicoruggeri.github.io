@@ -1,16 +1,11 @@
 ---
-title: "PRIMA: PRivacy Infringements Machine-Advice - Final Conference" 
+title: 'PRIMA: PRivacy Infringements Machine-Advice, final conference'
 date: 2026-01-12
-tags: 
-  - news
-  - workshop
-  - EquAl
-  - project
-  - legal
-  - event
- 
-summary: "I was invited to give a talk about how we can define interpretable models by teaching them to extract highlights from text"
-
-type: redirect
-target: https://nlp.unibo.it/news/prima/
+kind: talk
+venue: Invited talk
+summary: The conference presented methods and tools for the automated analysis of privacy policies and the assessment of their lawfulness. My talk showed how models become interpretable when they learn to extract highlights from text.
+links:
+  - {name: Slides, url: 'https://nlp.unibo.it/news/prima/explainability-via-highlights.pdf'}
+  - {name: Program, url: 'https://nlp.unibo.it/news/prima/program.pdf'}
+  - {name: Project, url: 'https://site.unibo.it/prima/en/project'}
 ---

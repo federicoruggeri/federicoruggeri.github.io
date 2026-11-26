@@ -1,0 +1,2 @@
+{{- /* Inline SVG icon from assets/icons/<name>.svg, drawn in the current text colour. */ -}}
+{{- with resources.Get (printf "icons/%s.svg" .) }}<span class="icon">{{ .Content | safeHTML }}</span>{{ else }}{{ errorf "icon: assets/icons/%s.svg not found" . }}{{ end -}}

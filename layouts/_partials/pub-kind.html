@@ -1,0 +1,10 @@
+{{- /* Kind of a publication, from its CSL type and, for papers, its venue. */ -}}
+{{- $t := index (.Params.publication_types | default (slice "")) 0 }}
+{{- $kind := "Conference" }}
+{{- if eq $t "article-journal" }}{{ $kind = "Journal" }}
+{{- else if eq $t "article" }}{{ $kind = "Preprint" }}
+{{- else if in (slice "chapter" "book") $t }}{{ $kind = "Book" }}
+{{- else if eq $t "thesis" }}{{ $kind = "Thesis" }}
+{{- else if findRE `(?i)workshop|working notes` .Params.publication }}{{ $kind = "Workshop" }}
+{{- end }}
+{{- return $kind }}
